@@ -1,7 +1,7 @@
 # DTC Project: brooklyn food waste
 This repo contains my code for DataTalkClub's DE Zoomcamp Project. 
 
-A huge thanks to DataTalks Club Team for creating this great [DE Zoompcamp]([https://duckduckgo.com](https://github.com/DataTalksClub/data-engineering-zoomcamp)!!
+A huge thanks to DataTalks Club Team for creating this great [DE Zoompcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp)!!
 
 # Goal
 This project aims to create a data pipeline that processes data that will help answer the following questions:
