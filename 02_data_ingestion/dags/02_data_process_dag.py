@@ -7,6 +7,7 @@ from airflow import DAG
 from airflow.utils.dates import days_ago
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
+from airflow.operators.python import TriggerDagRunOperator, TriggerRule
 
 from google.cloud import storage
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
@@ -72,18 +73,22 @@ default_args = {
 
 # NOTE: DAG declaration - using a Context Manager (an implicit way)
 with DAG(
-    dag_id="data_ingestion_gcs_dag",
-    schedule_interval="@monthly",
+    dag_id="data_ingestion_to_gcs",
+    schedule_interval="@once",
     start_date=datetime(2020, 1, 1),
     default_args=default_args,
     catchup=True,
     max_active_runs=2,
-    tags=['dtc-de'],
 ) as dag:
 
-    download_dataset_task = PythonOperator(
-        task_id="download_dataset_task",
+    download_data_task = PythonOperator(
+        task_id="download_data_task",
         python_callable=download_data
+    )
+
+    unzip_dataset_task = PythonOperator(
+        task_id="unzip_dataset_task",
+        python_callable=unzip_data
     )
 
     format_to_parquet_task = PythonOperator(
@@ -99,14 +104,19 @@ with DAG(
         python_callable=upload_to_gcs,
         op_kwargs={
             "bucket": BUCKET,
-            "object_name": f"{parquet_file}",
+            "object_name": f"raw/{parquet_file}",
             "local_file": f"{path_to_local_home}/{parquet_file}",
         },
     )
     
     rm_task = BashOperator(
             task_id="rm_task",
-            bash_command=f"rm {dataset_file} {zipfile_name}"
+            bash_command=f"rm {path_to_local_home}/{dataset_file} {path_to_local_home}/{zipfile_name}"
         )
 
-    download_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> rm_task
+    trigger_process = TriggerDagRunOperator(
+        task_id='trigger', 
+        trigger_rule=TriggerRule.ALL_SUCCESS, 
+        trigger_dag_id="process-wine-dataset",
+        reset_dag_run=True)
+    download_data_task >> unzip_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> rm_task
