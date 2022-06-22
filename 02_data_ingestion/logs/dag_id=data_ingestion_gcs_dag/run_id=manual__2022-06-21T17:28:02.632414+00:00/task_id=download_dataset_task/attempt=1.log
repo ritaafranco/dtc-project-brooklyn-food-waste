@@ -1,0 +1,155 @@
+[2022-06-21 17:28:21,850] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T17:28:02.632414+00:00 [queued]>
+[2022-06-21 17:28:21,874] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T17:28:02.632414+00:00 [queued]>
+[2022-06-21 17:28:21,875] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 17:28:21,875] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-21 17:28:21,875] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 17:28:21,920] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): download_dataset_task> on 2022-06-21 17:28:02.632414+00:00
+[2022-06-21 17:28:21,933] {standard_task_runner.py:52} INFO - Started process 92 to run task
+[2022-06-21 17:28:21,939] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_dataset_task', 'manual__2022-06-21T17:28:02.632414+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp31d3xrt1', '--error-file', '/tmp/tmpd7ri31ta']
+[2022-06-21 17:28:21,945] {standard_task_runner.py:80} INFO - Job 81: Subtask download_dataset_task
+[2022-06-21 17:28:22,061] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T17:28:02.632414+00:00 [running]> on host 7bfe2156ba0b
+[2022-06-21 17:28:22,299] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-21T17:28:02.632414+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-21T17:28:02.632414+00:00
+[2022-06-21 17:28:22,302] {logging_mixin.py:115} INFO - dtc-project-ritaafranco dtc-project-data_dtc-project-ritaafranco hhhhhhh
+[2022-06-21 17:28:22,302] {logging_mixin.py:115} INFO - kaggle env
+[2022-06-21 17:28:22,302] {logging_mixin.py:115} INFO - None
+[2022-06-21 17:28:22,303] {logging_mixin.py:115} INFO - #############################
+[2022-06-21 17:28:22,303] {logging_mixin.py:115} INFO - /opt/***
+[2022-06-21 17:28:22,310] {logging_mixin.py:115} INFO - /opt/***/dags/dags.py
+[2022-06-21 17:28:22,311] {logging_mixin.py:115} INFO - /opt/***/dags/__pycache__/dags.cpython-37.pyc
+[2022-06-21 17:28:22,312] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:28:02.632414+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,312] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=scheduled__2022-06-20T00:00:00+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,312] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=scheduled__2022-06-20T00:00:00+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,312] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:45:40.713643+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,313] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:48:06.367746+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,313] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:25:02.169861+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,313] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:25:02.169861+00:00/task_id=format_to_parquet_task/attempt=1.log
+[2022-06-21 17:28:22,313] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:53:09.995114+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,313] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:20:27.437267+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,313] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:20:27.437267+00:00/task_id=format_to_parquet_task/attempt=1.log
+[2022-06-21 17:28:22,314] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:26:09.331925+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,314] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:26:09.331925+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,314] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:00:31.980645+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,314] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:00:31.980645+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,314] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:12:55.701002+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,315] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:28:32.075206+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,315] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:09:21.702680+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,315] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T15:51:26.273157+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,315] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T15:51:26.273157+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,315] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T15:29:37.286778+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,316] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T15:29:37.286778+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,316] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:11:53.074770+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,316] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:11:53.074770+00:00/task_id=format_to_parquet_task/attempt=2.log
+[2022-06-21 17:28:22,316] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:11:53.074770+00:00/task_id=format_to_parquet_task/attempt=1.log
+[2022-06-21 17:28:22,316] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:32:22.311646+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,316] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:32:22.311646+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,317] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:56:09.665821+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,317] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T14:47:46.866256+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,317] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T14:47:46.866256+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,317] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:01:02.012945+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,318] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:01:02.012945+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,318] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:39:53.171404+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,318] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T16:39:53.171404+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,318] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:15:10.456264+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,318] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:15:10.456264+00:00/task_id=format_to_parquet_task/attempt=1.log
+[2022-06-21 17:28:22,318] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:20:14.445054+00:00/task_id=download_dataset_task/attempt=2.log
+[2022-06-21 17:28:22,319] {logging_mixin.py:115} INFO - /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2022-06-21T17:20:14.445054+00:00/task_id=download_dataset_task/attempt=1.log
+[2022-06-21 17:28:22,319] {logging_mixin.py:115} INFO - /opt/***/logs/dag_processor_manager/dag_processor_manager.log
+[2022-06-21 17:28:22,319] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/dags.py.log
+[2022-06-21 17:28:22,319] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_python_operator.py.log
+[2022-06-21 17:28:22,319] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_branch_labels.py.log
+[2022-06-21 17:28:22,320] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_xcomargs.py.log
+[2022-06-21 17:28:22,320] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/subdags/subdag.py.log
+[2022-06-21 17:28:22,320] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_kubernetes_executor.py.log
+[2022-06-21 17:28:22,320] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/tutorial.py.log
+[2022-06-21 17:28:22,320] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_passing_params_via_test_command.py.log
+[2022-06-21 17:28:22,320] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_task_group_decorator.py.log
+[2022-06-21 17:28:22,321] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_branch_operator.py.log
+[2022-06-21 17:28:22,321] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/tutorial_etl_dag.py.log
+[2022-06-21 17:28:22,321] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_local_kubernetes_executor.py.log
+[2022-06-21 17:28:22,321] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_short_circuit_operator.py.log
+[2022-06-21 17:28:22,321] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_nested_branch_dag.py.log
+[2022-06-21 17:28:22,322] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_trigger_controller_dag.py.log
+[2022-06-21 17:28:22,322] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_latest_only_with_trigger.py.log
+[2022-06-21 17:28:22,322] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_subdag_operator.py.log
+[2022-06-21 17:28:22,322] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/plugins/workday.py.log
+[2022-06-21 17:28:22,322] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_task_group.py.log
+[2022-06-21 17:28:22,322] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_branch_datetime_operator.py.log
+[2022-06-21 17:28:22,323] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/tutorial_taskflow_api_etl.py.log
+[2022-06-21 17:28:22,323] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_external_task_marker_dag.py.log
+[2022-06-21 17:28:22,323] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_time_delta_sensor_async.py.log
+[2022-06-21 17:28:22,323] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_branch_operator_decorator.py.log
+[2022-06-21 17:28:22,323] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_trigger_target_dag.py.log
+[2022-06-21 17:28:22,324] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/tutorial_taskflow_api_etl_virtualenv.py.log
+[2022-06-21 17:28:22,324] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_sla_dag.py.log
+[2022-06-21 17:28:22,324] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_latest_only.py.log
+[2022-06-21 17:28:22,324] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_branch_python_dop_operator_3.py.log
+[2022-06-21 17:28:22,324] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_xcom.py.log
+[2022-06-21 17:28:22,325] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_bash_operator.py.log
+[2022-06-21 17:28:22,325] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_complex.py.log
+[2022-06-21 17:28:22,325] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_dag_decorator.py.log
+[2022-06-21 17:28:22,325] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_branch_day_of_week_operator.py.log
+[2022-06-21 17:28:22,325] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/latest/native_dags/example_dags/example_skip_dag.py.log
+[2022-06-21 17:28:22,326] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/dags.py.log
+[2022-06-21 17:28:22,326] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_python_operator.py.log
+[2022-06-21 17:28:22,326] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_branch_labels.py.log
+[2022-06-21 17:28:22,326] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_xcomargs.py.log
+[2022-06-21 17:28:22,326] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/subdags/subdag.py.log
+[2022-06-21 17:28:22,327] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_kubernetes_executor.py.log
+[2022-06-21 17:28:22,327] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/tutorial.py.log
+[2022-06-21 17:28:22,327] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_passing_params_via_test_command.py.log
+[2022-06-21 17:28:22,327] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_task_group_decorator.py.log
+[2022-06-21 17:28:22,327] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_branch_operator.py.log
+[2022-06-21 17:28:22,327] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/tutorial_etl_dag.py.log
+[2022-06-21 17:28:22,328] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_local_kubernetes_executor.py.log
+[2022-06-21 17:28:22,328] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_short_circuit_operator.py.log
+[2022-06-21 17:28:22,328] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_nested_branch_dag.py.log
+[2022-06-21 17:28:22,328] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_trigger_controller_dag.py.log
+[2022-06-21 17:28:22,328] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_latest_only_with_trigger.py.log
+[2022-06-21 17:28:22,329] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_subdag_operator.py.log
+[2022-06-21 17:28:22,329] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/plugins/workday.py.log
+[2022-06-21 17:28:22,329] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_task_group.py.log
+[2022-06-21 17:28:22,329] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_branch_datetime_operator.py.log
+[2022-06-21 17:28:22,329] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/tutorial_taskflow_api_etl.py.log
+[2022-06-21 17:28:22,330] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_external_task_marker_dag.py.log
+[2022-06-21 17:28:22,330] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_time_delta_sensor_async.py.log
+[2022-06-21 17:28:22,330] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_branch_operator_decorator.py.log
+[2022-06-21 17:28:22,330] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_trigger_target_dag.py.log
+[2022-06-21 17:28:22,330] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/tutorial_taskflow_api_etl_virtualenv.py.log
+[2022-06-21 17:28:22,330] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_sla_dag.py.log
+[2022-06-21 17:28:22,331] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_latest_only.py.log
+[2022-06-21 17:28:22,331] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_branch_python_dop_operator_3.py.log
+[2022-06-21 17:28:22,331] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_xcom.py.log
+[2022-06-21 17:28:22,331] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_bash_operator.py.log
+[2022-06-21 17:28:22,331] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_complex.py.log
+[2022-06-21 17:28:22,332] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_dag_decorator.py.log
+[2022-06-21 17:28:22,332] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_branch_day_of_week_operator.py.log
+[2022-06-21 17:28:22,332] {logging_mixin.py:115} INFO - /opt/***/logs/scheduler/2022-06-21/native_dags/example_dags/example_skip_dag.py.log
+[2022-06-21 17:28:22,332] {logging_mixin.py:115} INFO - /opt/***/***-worker.pid
+[2022-06-21 17:28:22,332] {logging_mixin.py:115} INFO - /opt/***/webserver_config.py
+[2022-06-21 17:28:22,333] {logging_mixin.py:115} INFO - /opt/***/***.cfg
+[2022-06-21 17:28:22,333] {logging_mixin.py:115} INFO - ****************
+[2022-06-21 17:28:22,376] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dags.py", line 73, in download_data
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /home/***/.kaggle. Or use the environment method.
+[2022-06-21 17:28:22,406] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_ingestion_gcs_dag, task_id=download_dataset_task, execution_date=20220621T172802, start_date=20220621T172821, end_date=20220621T172822
+[2022-06-21 17:28:22,443] {standard_task_runner.py:97} ERROR - Failed to execute job 81 for task download_dataset_task (Could not find kaggle.json. Make sure it's located in /home/***/.kaggle. Or use the environment method.; 92)
+[2022-06-21 17:28:22,489] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-21 17:28:22,622] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

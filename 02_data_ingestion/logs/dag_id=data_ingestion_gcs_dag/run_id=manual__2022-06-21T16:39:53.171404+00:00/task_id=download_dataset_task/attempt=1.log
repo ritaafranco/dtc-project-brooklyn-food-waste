@@ -1,0 +1,43 @@
+[2022-06-21 16:39:55,530] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T16:39:53.171404+00:00 [queued]>
+[2022-06-21 16:39:55,535] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T16:39:53.171404+00:00 [queued]>
+[2022-06-21 16:39:55,535] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 16:39:55,535] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-21 16:39:55,535] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 16:39:55,545] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): download_dataset_task> on 2022-06-21 16:39:53.171404+00:00
+[2022-06-21 16:39:55,551] {standard_task_runner.py:52} INFO - Started process 140 to run task
+[2022-06-21 16:39:55,553] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_dataset_task', 'manual__2022-06-21T16:39:53.171404+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmphaa2dvkm', '--error-file', '/tmp/tmpry3iygua']
+[2022-06-21 16:39:55,553] {standard_task_runner.py:80} INFO - Job 44: Subtask download_dataset_task
+[2022-06-21 16:39:55,586] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T16:39:53.171404+00:00 [running]> on host eec1046fbc70
+[2022-06-21 16:39:55,636] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-21T16:39:53.171404+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-21T16:39:53.171404+00:00
+[2022-06-21 16:39:55,657] {logging_mixin.py:115} INFO - Please provide your Kaggle credentials to download this dataset. Learn more: http://bit.ly/kaggle-creds
+[2022-06-21 16:39:55,658] {logging_mixin.py:115} INFO - Your Kaggle username:
+[2022-06-21 16:39:55,658] {logging_mixin.py:115} INFO -  
+[2022-06-21 16:39:55,658] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dags.py", line 77, in download_data
+    op.download("https://www.kaggle.com/datasets/ursulakaczmarek/brooklyn-food-waste/download")
+  File "/home/airflow/.local/lib/python3.7/site-packages/opendatasets/__init__.py", line 13, in download
+    return download_kaggle_dataset(dataset_id_or_url, data_dir=data_dir, force=force, dry_run=dry_run)
+  File "/home/airflow/.local/lib/python3.7/site-packages/opendatasets/utils/kaggle_api.py", line 46, in download_kaggle_dataset
+    os.environ['KAGGLE_USERNAME'] = click.prompt("Your Kaggle username")
+  File "/home/airflow/.local/lib/python3.7/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/home/airflow/.local/lib/python3.7/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+[2022-06-21 16:39:55,677] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_ingestion_gcs_dag, task_id=download_dataset_task, execution_date=20220621T163953, start_date=20220621T163955, end_date=20220621T163955
+[2022-06-21 16:39:55,686] {standard_task_runner.py:97} ERROR - Failed to execute job 44 for task download_dataset_task (; 140)
+[2022-06-21 16:39:55,725] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-21 16:39:55,769] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

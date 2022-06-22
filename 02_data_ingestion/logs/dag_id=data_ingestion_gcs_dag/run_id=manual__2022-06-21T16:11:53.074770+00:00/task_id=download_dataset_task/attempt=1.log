@@ -1,0 +1,25 @@
+[2022-06-21 16:12:07,634] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T16:11:53.074770+00:00 [queued]>
+[2022-06-21 16:12:07,640] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T16:11:53.074770+00:00 [queued]>
+[2022-06-21 16:12:07,640] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 16:12:07,640] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-21 16:12:07,640] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 16:12:07,652] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): download_dataset_task> on 2022-06-21 16:11:53.074770+00:00
+[2022-06-21 16:12:07,660] {standard_task_runner.py:52} INFO - Started process 122 to run task
+[2022-06-21 16:12:07,662] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_dataset_task', 'manual__2022-06-21T16:11:53.074770+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpsmh04876', '--error-file', '/tmp/tmpcjws7rfs']
+[2022-06-21 16:12:07,662] {standard_task_runner.py:80} INFO - Job 26: Subtask download_dataset_task
+[2022-06-21 16:12:07,695] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_dataset_task manual__2022-06-21T16:11:53.074770+00:00 [running]> on host 8ad54407eeac
+[2022-06-21 16:12:07,749] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-21T16:11:53.074770+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-21T16:11:53.074770+00:00
+[2022-06-21 16:12:07,750] {logging_mixin.py:115} INFO - #############################
+[2022-06-21 16:12:07,750] {logging_mixin.py:115} INFO - /opt/***
+[2022-06-21 16:12:07,750] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 16:12:07,759] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=download_dataset_task, execution_date=20220621T161153, start_date=20220621T161207, end_date=20220621T161207
+[2022-06-21 16:12:07,794] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 16:12:07,847] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
