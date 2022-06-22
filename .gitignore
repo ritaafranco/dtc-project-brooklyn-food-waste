@@ -1,0 +1,6 @@
+*/.kaggle/kaggle.json
+*.ipynb
+*.csv
+*.zip
+**/__pycache__/
+**/02_data_ingestion/logs/
