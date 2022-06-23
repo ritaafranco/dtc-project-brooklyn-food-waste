@@ -6,10 +6,9 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
-from airflow.operators.python import TriggerDagRunOperator, TriggerRule
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from google.cloud import storage
-from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
 import pyarrow.csv as pv
 import pyarrow.parquet as pq
 
@@ -71,12 +70,12 @@ default_args = {
 }
 
 # NOTE: DAG declaration - using a Context Manager (an implicit way)
-with DAG(
+with DAG( 
     dag_id="data_ingestion_to_gcs",
     schedule_interval="@once",
     start_date=datetime(2020, 1, 1),
     default_args=default_args,
-    catchup=True,
+    catchup=False,
     max_active_runs=2,
 ) as dag:
 
@@ -108,14 +107,17 @@ with DAG(
         },
     )
     
+    trigger_process = TriggerDagRunOperator(
+        task_id='trigger',  
+        trigger_dag_id="process-food-waste-data",
+        wait_for_completion=False #,
+        #execution_date = '{{ ds }}',
+        #reset_dag_run=True
+        )
+    
     rm_task = BashOperator(
             task_id="rm_task",
             bash_command=f"rm {path_to_local_home}/{dataset_file} {path_to_local_home}/{zipfile_name}"
         )
 
-    trigger_process = TriggerDagRunOperator(
-        task_id='trigger', 
-        trigger_rule=TriggerRule.ALL_SUCCESS, 
-        trigger_dag_id="process-wine-dataset",
-        reset_dag_run=True)
-    download_data_task >> unzip_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> rm_task
+    download_data_task >> unzip_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> trigger_process >> rm_task

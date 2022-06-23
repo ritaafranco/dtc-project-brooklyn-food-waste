@@ -1,3 +1,6 @@
 opendatasets
 kaggle
 apache-airflow-providers-google
+pyspark
+apache-airflow-providers-apache-spark
+gcsfs

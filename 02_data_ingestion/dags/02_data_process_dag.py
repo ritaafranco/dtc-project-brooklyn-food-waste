@@ -4,66 +4,23 @@ import logging
 from datetime import datetime
 
 from airflow import DAG
-from airflow.utils.dates import days_ago
-from airflow.operators.bash import BashOperator
+from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
 from airflow.operators.python import PythonOperator
-from airflow.operators.python import TriggerDagRunOperator, TriggerRule
 
 from google.cloud import storage
-from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
+
+from scripts.process_food_waste_data import process_food_waste_data
+
 import pyarrow.csv as pv
 import pyarrow.parquet as pq
 
 PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
 
-dataset_file = 'brooklyn.csv'
-dataset_name = 'ursulakaczmarek/brooklyn-food-waste'
-zipfile_name = dataset_name.split('/')[1]+'.zip'
+
+raw_folder = 'raw'
+parquet_file = 'brooklyn.parquet'
 path_to_local_home = os.environ.get("AIRFLOW_HOME", "/opt/airflow/")
-parquet_file = dataset_file.replace('.csv', '.parquet')
-BIGQUERY_DATASET = os.environ.get("BIGQUERY_DATASET")
-
-def download_data(dataset_name = dataset_name):
-    # extracting data from Kaggle
-    from kaggle.api.kaggle_api_extended import KaggleApi
-    api = KaggleApi()
-    api.authenticate()
-    api.dataset_download_files(dataset_name)
-
-def unzip_data(zipfile_name = zipfile_name):
-    from zipfile import ZipFile
-    zf = ZipFile(zipfile_name)
-    zf.extractall() #save files in cwd
-    zf.close()
-
-def format_to_parquet(src_file):
-    if not src_file.endswith('.csv'):
-        logging.error("Can only accept source files in CSV format, for the moment")
-        return
-    table = pv.read_csv(src_file)
-    pq.write_table(table, src_file.replace('.csv', '.parquet'))
-
-def upload_to_gcs(bucket, object_name, local_file):
-    """
-    Ref: https://cloud.google.com/storage/docs/uploading-objects#storage-upload-object-python
-    :param bucket: GCS bucket name
-    :param object_name: target path & file-name
-    :param local_file: source path & file-name
-    :return:
-    """
-    # WORKAROUND to prevent timeout for files > 6 MB on 800 kbps upload speed.
-    # (Ref: https://github.com/googleapis/python-storage/issues/74)
-    storage.blob._MAX_MULTIPART_SIZE = 5 * 1024 * 1024  # 5 MB
-    storage.blob._DEFAULT_CHUNKSIZE = 5 * 1024 * 1024  # 5 MB
-    # End of Workaround
-
-    client = storage.Client()
-    bucket = client.bucket(bucket)
-
-    blob = bucket.blob(object_name)
-    blob.upload_from_filename(local_file)
-
 
 default_args = {
     "owner": "airflow",
@@ -73,50 +30,34 @@ default_args = {
 
 # NOTE: DAG declaration - using a Context Manager (an implicit way)
 with DAG(
-    dag_id="data_ingestion_to_gcs",
-    schedule_interval="@once",
+    dag_id="process-food-waste-data",
+    schedule_interval=None,
     start_date=datetime(2020, 1, 1),
     default_args=default_args,
-    catchup=True,
-    max_active_runs=2,
+    catchup=False,
+    max_active_runs=1,
 ) as dag:
 
-    download_data_task = PythonOperator(
-        task_id="download_data_task",
-        python_callable=download_data
-    )
 
-    unzip_dataset_task = PythonOperator(
-        task_id="unzip_dataset_task",
-        python_callable=unzip_data
-    )
-
-    format_to_parquet_task = PythonOperator(
-        task_id="format_to_parquet_task",
-        python_callable=format_to_parquet,
+    process_data_task = PythonOperator(
+        task_id="process_data_task",
+        python_callable=process_food_waste_data,
         op_kwargs={
-            "src_file": f"{path_to_local_home}/{dataset_file}",
+            "raw_folder": raw_folder,
+            "parquet_file": parquet_file,
+            "cols_to_drop": ["image_id", "id"]
         },
     )
+    '''
+    process_data_task = SparkSubmitOperator(
+                task_id="spark_job",
+                application="./dags/scripts/process_food_waste.py", # Spark application path created in airflow and spark cluster
+                name="process_data",
+                conn_id="spark_default",
+                verbose=1,
+                conf={"spark.master":"local[*]"},
+                dag=dag)'''
 
-    local_to_gcs_task = PythonOperator(
-        task_id="local_to_gcs_task",
-        python_callable=upload_to_gcs,
-        op_kwargs={
-            "bucket": BUCKET,
-            "object_name": f"raw/{parquet_file}",
-            "local_file": f"{path_to_local_home}/{parquet_file}",
-        },
-    )
+    process_data_task
+
     
-    rm_task = BashOperator(
-            task_id="rm_task",
-            bash_command=f"rm {path_to_local_home}/{dataset_file} {path_to_local_home}/{zipfile_name}"
-        )
-
-    trigger_process = TriggerDagRunOperator(
-        task_id='trigger', 
-        trigger_rule=TriggerRule.ALL_SUCCESS, 
-        trigger_dag_id="process-wine-dataset",
-        reset_dag_run=True)
-    download_data_task >> unzip_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> rm_task
