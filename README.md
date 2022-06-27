@@ -6,7 +6,7 @@ A huge thanks to DataTalks Club Team for creating this great [DE Zoompcamp](http
 # Goal
 This project aims to create a data pipeline that processes data that will help answer the following questions:
 * Which food products are most wasted in Brooklyn?
-* Which reatilers throw away more food?
+* Which kind of food is wasted the most? (ready-to-eat, perishable, packaged or shelf stable)
 
 # Dataset
 The dataset can be found [here](https://www.kaggle.com/datasets/ursulakaczmarek/brooklyn-food-waste), it contains data used to research the relationship between food waste and the date labels found on those wasted food items. The data was collected by picking up items directly from retailer trash piles at random in the Downtown Brooklyn neighborhood in New York City.

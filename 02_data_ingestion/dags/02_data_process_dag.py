@@ -19,6 +19,7 @@ BUCKET = os.environ.get("GCP_GCS_BUCKET")
 
 
 raw_folder = 'raw'
+processed_folder = 'processed'
 parquet_file = 'brooklyn.parquet'
 path_to_local_home = os.environ.get("AIRFLOW_HOME", "/opt/airflow/")
 
@@ -28,7 +29,7 @@ default_args = {
     "retries": 1,
 }
 
-# NOTE: DAG declaration - using a Context Manager (an implicit way)
+
 with DAG(
     dag_id="process-food-waste-data",
     schedule_interval=None,
@@ -38,25 +39,54 @@ with DAG(
     max_active_runs=1,
 ) as dag:
 
-
+    
     process_data_task = PythonOperator(
         task_id="process_data_task",
         python_callable=process_food_waste_data,
         op_kwargs={
             "raw_folder": raw_folder,
             "parquet_file": parquet_file,
+            "processed_folder": processed_folder,
             "cols_to_drop": ["image_id", "id"]
         },
     )
-    '''
-    process_data_task = SparkSubmitOperator(
-                task_id="spark_job",
-                application="./dags/scripts/process_food_waste.py", # Spark application path created in airflow and spark cluster
-                name="process_data",
-                conn_id="spark_default",
-                verbose=1,
-                conf={"spark.master":"local[*]"},
-                dag=dag)'''
+
+    bigquery_external_table_task = BigQueryCreateExternalTableOperator(
+        task_id=f"bq_{colour}_{DATASET}_external_table_task",
+        table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": f"{colour}_{DATASET}_external_table",
+            },
+            "externalDataConfiguration": {
+                "autodetect": "True",
+                "sourceFormat": f"{INPUT_FILETYPE.upper()}",
+                "sourceUris": [f"gs://{BUCKET}/{colour}/*"],
+            },
+        },
+    )
+
+    CREATE_BQ_TBL_QUERY = (
+        f"CREATE OR REPLACE TABLE {BIGQUERY_DATASET}.{colour}_{DATASET} \
+        PARTITION BY DATE({ds_col}) \
+        AS \
+        SELECT * FROM {BIGQUERY_DATASET}.{colour}_{DATASET}_external_table;"
+    )
+
+    # Create a partitioned table from external table
+    bq_create_partitioned_table_job = BigQueryInsertJobOperator(
+        task_id=f"bq_create_{colour}_{DATASET}_partitioned_table_task",
+        configuration={
+            "query": {
+                "query": CREATE_BQ_TBL_QUERY,
+                "useLegacySql": False,
+            }
+        }
+    )
+    
+    # remove processed data 
+
 
     process_data_task
 
