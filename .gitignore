@@ -1,7 +1,3 @@
 */.kaggle/kaggle.json
-*.ipynb
-*.csv
-*.zip
 **/__pycache__/
-**/02_data_ingestion/logs/
-random.py
+**/02_data_ingestion/logs/*

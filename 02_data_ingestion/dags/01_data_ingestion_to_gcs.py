@@ -1,4 +1,3 @@
-from importlib.resources import path
 import os
 import logging
 from datetime import datetime
@@ -12,24 +11,21 @@ from google.cloud import storage
 import pyarrow.csv as pv
 import pyarrow.parquet as pq
 
+from utils import Configs
+
 PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
-
-dataset_file = 'brooklyn.csv'
-dataset_name = 'ursulakaczmarek/brooklyn-food-waste'
-zipfile_name = dataset_name.split('/')[1]+'.zip'
 path_to_local_home = os.environ.get("AIRFLOW_HOME", "/opt/airflow/")
-parquet_file = dataset_file.replace('.csv', '.parquet')
-raw_folder = 'raw'
 
-def download_data(dataset_name = dataset_name):
+
+def download_data(dataset_name = Configs.dataset_name):
     # extracting data from Kaggle
     from kaggle.api.kaggle_api_extended import KaggleApi
     api = KaggleApi()
     api.authenticate()
     api.dataset_download_files(dataset_name)
 
-def unzip_data(zipfile_name = zipfile_name):
+def unzip_data(zipfile_name = Configs.zipfile_name):
     from zipfile import ZipFile
     zf = ZipFile(zipfile_name)
     zf.extractall() #save files in cwd
@@ -93,7 +89,7 @@ with DAG(
         task_id="format_to_parquet_task",
         python_callable=format_to_parquet,
         op_kwargs={
-            "src_file": f"{path_to_local_home}/{dataset_file}",
+            "src_file": f"{path_to_local_home}/{Configs.dataset_file}",
         },
     )
 
@@ -102,22 +98,20 @@ with DAG(
         python_callable=upload_to_gcs,
         op_kwargs={
             "bucket": BUCKET,
-            "object_name": f"{raw_folder}/{parquet_file}",
-            "local_file": f"{path_to_local_home}/{parquet_file}",
+            "object_name": f"{Configs.raw_folder}/{Configs.parquet_file}",
+            "local_file": f"{path_to_local_home}/{Configs.parquet_file}",
         },
     )
     
     trigger_process = TriggerDagRunOperator(
         task_id='trigger',  
         trigger_dag_id="process-food-waste-data",
-        wait_for_completion=False #,
-        #execution_date = '{{ ds }}',
-        #reset_dag_run=True
+        wait_for_completion=False
         )
     
     rm_task = BashOperator(
             task_id="rm_task",
-            bash_command=f"rm {path_to_local_home}/{dataset_file} {path_to_local_home}/{zipfile_name}"
+            bash_command=f"rm {path_to_local_home}/{Configs.dataset_file} {path_to_local_home}/{Configs.zipfile_name}"
         )
 
     download_data_task >> unzip_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> trigger_process >> rm_task
