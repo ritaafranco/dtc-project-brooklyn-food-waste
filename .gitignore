@@ -1,3 +1,6 @@
 **/.ipynb_checkpoints/
 **/__pycache__/
 **/02_airflow/logs/*
+**/.terraform/
+.terraform.lock.hcl
+terraform.tfstate
