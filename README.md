@@ -15,3 +15,5 @@ The dataset can be found [here](https://www.kaggle.com/datasets/ursulakaczmarek/
 # Dashboard
 
 [here](https://datastudio.google.com/reporting/c01d8ee8-3423-465d-b8dc-c3ed280cb9d2)
+
+![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Dashboard.png)
