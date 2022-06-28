@@ -1,0 +1,27 @@
+[2022-06-27 16:05:18,690] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_to_gcs.rm_task manual__2022-06-27T16:05:11.244826+00:00 [queued]>
+[2022-06-27 16:05:18,697] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_to_gcs.rm_task manual__2022-06-27T16:05:11.244826+00:00 [queued]>
+[2022-06-27 16:05:18,697] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 16:05:18,697] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-27 16:05:18,697] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 16:05:18,709] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): rm_task> on 2022-06-27 16:05:11.244826+00:00
+[2022-06-27 16:05:18,713] {standard_task_runner.py:52} INFO - Started process 211 to run task
+[2022-06-27 16:05:18,715] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_to_gcs', 'rm_task', 'manual__2022-06-27T16:05:11.244826+00:00', '--job-id', '412', '--raw', '--subdir', 'DAGS_FOLDER/01_data_ingestion_to_gcs.py', '--cfg-path', '/tmp/tmplu7gd56w', '--error-file', '/tmp/tmpuxkscgwk']
+[2022-06-27 16:05:18,716] {standard_task_runner.py:80} INFO - Job 412: Subtask rm_task
+[2022-06-27 16:05:18,752] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_to_gcs.rm_task manual__2022-06-27T16:05:11.244826+00:00 [running]> on host 9f549fe13a2f
+[2022-06-27 16:05:18,806] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_to_gcs
+AIRFLOW_CTX_TASK_ID=rm_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T16:05:11.244826+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T16:05:11.244826+00:00
+[2022-06-27 16:05:18,807] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-27 16:05:18,808] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/brooklyn.csv /opt/***/brooklyn-food-waste.zip']
+[2022-06-27 16:05:18,818] {subprocess.py:85} INFO - Output:
+[2022-06-27 16:05:18,820] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-27 16:05:18,847] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_ingestion_to_gcs, task_id=rm_task, execution_date=20220627T160511, start_date=20220627T160518, end_date=20220627T160518
+[2022-06-27 16:05:18,888] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-27 16:05:18,911] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

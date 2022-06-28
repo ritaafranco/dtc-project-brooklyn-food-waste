@@ -1,0 +1,35 @@
+[2022-06-27 16:38:30,705] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-27T16:21:10.137765+00:00 [queued]>
+[2022-06-27 16:38:30,712] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-27T16:21:10.137765+00:00 [queued]>
+[2022-06-27 16:38:30,712] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 16:38:30,712] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2022-06-27 16:38:30,712] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 16:38:30,725] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): process_data_task> on 2022-06-27 16:21:10.137765+00:00
+[2022-06-27 16:38:30,730] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-27 16:38:30,730] {standard_task_runner.py:52} INFO - Started process 169 to run task
+[2022-06-27 16:38:30,733] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'process-food-waste-data', 'process_data_task', 'manual__2022-06-27T16:21:10.137765+00:00', '--job-id', '433', '--raw', '--subdir', 'DAGS_FOLDER/02_data_process_dag.py', '--cfg-path', '/tmp/tmptlmdm571', '--error-file', '/tmp/tmpwu1uepfv']
+[2022-06-27 16:38:30,734] {standard_task_runner.py:80} INFO - Job 433: Subtask process_data_task
+[2022-06-27 16:38:30,775] {task_command.py:370} INFO - Running <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-27T16:21:10.137765+00:00 [running]> on host dff07b484c88
+[2022-06-27 16:38:30,833] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=process-food-waste-data
+AIRFLOW_CTX_TASK_ID=process_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T16:21:10.137765+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T16:21:10.137765+00:00
+[2022-06-27 16:38:30,834] {logging_mixin.py:115} INFO - ENTERED FUNCTION
+[2022-06-27 16:38:38,898] {logging_mixin.py:115} INFO - There were  8  records eliminated by ensuring date format.
+[2022-06-27 16:38:38,899] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/process_food_waste_data.py", line 98, in process_food_waste_data
+    spark.write.parquet(f"gs://{BUCKET}/{processed_folder}/{parquet_file}").schema(food_waste_schema)
+AttributeError: 'SparkSession' object has no attribute 'write'
+[2022-06-27 16:38:38,908] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=process-food-waste-data, task_id=process_data_task, execution_date=20220627T162110, start_date=20220627T163830, end_date=20220627T163838
+[2022-06-27 16:38:38,923] {standard_task_runner.py:97} ERROR - Failed to execute job 433 for task process_data_task ('SparkSession' object has no attribute 'write'; 169)
+[2022-06-27 16:38:38,944] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-27 16:38:38,966] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

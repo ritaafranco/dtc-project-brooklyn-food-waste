@@ -1,0 +1,1509 @@
+[2022-06-28 14:36:15,970] {processor.py:153} INFO - Started process (PID=37) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:36:15,970] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:36:15,971] {logging_mixin.py:115} INFO - [2022-06-28 14:36:15,970] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:36:17,374] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:36:26,224] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:36:26,351] {logging_mixin.py:115} INFO - [2022-06-28 14:36:26,351] {manager.py:508} INFO - Created Permission View: can edit on DAG:data_to_dw_bq
+[2022-06-28 14:36:26,362] {logging_mixin.py:115} INFO - [2022-06-28 14:36:26,362] {manager.py:508} INFO - Created Permission View: can read on DAG:data_to_dw_bq
+[2022-06-28 14:36:26,370] {logging_mixin.py:115} INFO - [2022-06-28 14:36:26,370] {manager.py:508} INFO - Created Permission View: can delete on DAG:data_to_dw_bq
+[2022-06-28 14:36:26,372] {logging_mixin.py:115} INFO - [2022-06-28 14:36:26,371] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:36:26,382] {logging_mixin.py:115} INFO - [2022-06-28 14:36:26,382] {dag.py:2398} INFO - Creating ORM DAG for data_to_dw_bq
+[2022-06-28 14:36:26,396] {logging_mixin.py:115} INFO - [2022-06-28 14:36:26,396] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:36:26,411] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 10.444 seconds
+[2022-06-28 14:36:56,510] {processor.py:153} INFO - Started process (PID=368) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:36:56,511] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:36:56,511] {logging_mixin.py:115} INFO - [2022-06-28 14:36:56,511] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:36:56,969] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:37:01,033] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:37:01,052] {logging_mixin.py:115} INFO - [2022-06-28 14:37:01,051] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:37:01,067] {logging_mixin.py:115} INFO - [2022-06-28 14:37:01,067] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:37:01,076] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.569 seconds
+[2022-06-28 14:37:31,111] {processor.py:153} INFO - Started process (PID=690) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:37:31,111] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:37:31,112] {logging_mixin.py:115} INFO - [2022-06-28 14:37:31,112] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:37:31,540] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:37:37,004] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:37:37,031] {logging_mixin.py:115} INFO - [2022-06-28 14:37:37,030] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:37:37,056] {logging_mixin.py:115} INFO - [2022-06-28 14:37:37,056] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:37:37,071] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 5.962 seconds
+[2022-06-28 14:38:07,158] {processor.py:153} INFO - Started process (PID=1003) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:38:07,159] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:38:07,159] {logging_mixin.py:115} INFO - [2022-06-28 14:38:07,159] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:38:07,603] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:38:11,504] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:38:11,523] {logging_mixin.py:115} INFO - [2022-06-28 14:38:11,522] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:38:11,543] {logging_mixin.py:115} INFO - [2022-06-28 14:38:11,543] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:38:11,553] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.397 seconds
+[2022-06-28 14:38:42,339] {processor.py:153} INFO - Started process (PID=1359) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:38:42,339] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:38:42,340] {logging_mixin.py:115} INFO - [2022-06-28 14:38:42,340] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:38:42,828] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:38:46,398] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:38:46,412] {logging_mixin.py:115} INFO - [2022-06-28 14:38:46,411] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:38:46,423] {logging_mixin.py:115} INFO - [2022-06-28 14:38:46,423] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:38:46,430] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.093 seconds
+[2022-06-28 14:39:16,509] {processor.py:153} INFO - Started process (PID=1671) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:39:16,510] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:39:16,510] {logging_mixin.py:115} INFO - [2022-06-28 14:39:16,510] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:39:17,046] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:39:20,524] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:39:20,539] {logging_mixin.py:115} INFO - [2022-06-28 14:39:20,539] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:39:20,551] {logging_mixin.py:115} INFO - [2022-06-28 14:39:20,551] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:39:20,559] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.052 seconds
+[2022-06-28 14:41:09,136] {processor.py:153} INFO - Started process (PID=39) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:41:09,137] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:41:09,137] {logging_mixin.py:115} INFO - [2022-06-28 14:41:09,137] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:41:09,679] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:41:18,789] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:41:18,862] {logging_mixin.py:115} INFO - [2022-06-28 14:41:18,862] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:41:18,870] {logging_mixin.py:115} INFO - [2022-06-28 14:41:18,870] {dag.py:2398} INFO - Creating ORM DAG for data_to_dw_bq
+[2022-06-28 14:41:18,882] {logging_mixin.py:115} INFO - [2022-06-28 14:41:18,882] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:41:18,897] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 9.763 seconds
+[2022-06-28 14:41:48,975] {processor.py:153} INFO - Started process (PID=365) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:41:48,975] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:41:48,975] {logging_mixin.py:115} INFO - [2022-06-28 14:41:48,975] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:41:49,557] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:41:55,011] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:41:55,029] {logging_mixin.py:115} INFO - [2022-06-28 14:41:55,029] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:41:55,044] {logging_mixin.py:115} INFO - [2022-06-28 14:41:55,044] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:41:55,055] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 6.081 seconds
+[2022-06-28 14:42:25,924] {processor.py:153} INFO - Started process (PID=736) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:42:25,925] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:42:25,925] {logging_mixin.py:115} INFO - [2022-06-28 14:42:25,925] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:42:26,428] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:42:29,553] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:42:29,567] {logging_mixin.py:115} INFO - [2022-06-28 14:42:29,566] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:42:29,578] {logging_mixin.py:115} INFO - [2022-06-28 14:42:29,577] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:42:29,585] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.663 seconds
+[2022-06-28 14:43:00,354] {processor.py:153} INFO - Started process (PID=1088) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:43:00,354] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:43:00,355] {logging_mixin.py:115} INFO - [2022-06-28 14:43:00,354] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:43:00,856] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:43:03,769] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:43:03,783] {logging_mixin.py:115} INFO - [2022-06-28 14:43:03,783] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:43:03,796] {logging_mixin.py:115} INFO - [2022-06-28 14:43:03,796] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:43:03,803] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.451 seconds
+[2022-06-28 14:43:34,628] {processor.py:153} INFO - Started process (PID=1413) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:43:34,630] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:43:34,630] {logging_mixin.py:115} INFO - [2022-06-28 14:43:34,630] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:43:35,082] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:43:37,939] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:43:37,953] {logging_mixin.py:115} INFO - [2022-06-28 14:43:37,952] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:43:37,964] {logging_mixin.py:115} INFO - [2022-06-28 14:43:37,964] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:43:37,972] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.345 seconds
+[2022-06-28 14:44:08,893] {processor.py:153} INFO - Started process (PID=1765) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:44:08,895] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:44:08,895] {logging_mixin.py:115} INFO - [2022-06-28 14:44:08,895] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:44:09,379] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:44:12,397] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:44:12,411] {logging_mixin.py:115} INFO - [2022-06-28 14:44:12,411] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:44:12,423] {logging_mixin.py:115} INFO - [2022-06-28 14:44:12,423] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:44:12,432] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.540 seconds
+[2022-06-28 14:44:43,072] {processor.py:153} INFO - Started process (PID=2075) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:44:43,073] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:44:43,074] {logging_mixin.py:115} INFO - [2022-06-28 14:44:43,074] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:44:43,489] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:44:46,274] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:44:46,289] {logging_mixin.py:115} INFO - [2022-06-28 14:44:46,288] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:44:46,302] {logging_mixin.py:115} INFO - [2022-06-28 14:44:46,302] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:44:46,310] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.240 seconds
+[2022-06-28 14:45:17,272] {processor.py:153} INFO - Started process (PID=2393) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:45:17,273] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:45:17,273] {logging_mixin.py:115} INFO - [2022-06-28 14:45:17,273] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:45:17,698] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:45:20,593] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:45:20,607] {logging_mixin.py:115} INFO - [2022-06-28 14:45:20,607] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:45:20,620] {logging_mixin.py:115} INFO - [2022-06-28 14:45:20,620] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:45:20,627] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.357 seconds
+[2022-06-28 14:45:50,667] {processor.py:153} INFO - Started process (PID=2702) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:45:50,668] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:45:50,668] {logging_mixin.py:115} INFO - [2022-06-28 14:45:50,668] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:45:51,090] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:45:54,186] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:45:54,200] {logging_mixin.py:115} INFO - [2022-06-28 14:45:54,199] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:45:54,212] {logging_mixin.py:115} INFO - [2022-06-28 14:45:54,212] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:45:54,222] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.560 seconds
+[2022-06-28 14:46:24,842] {processor.py:153} INFO - Started process (PID=3014) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:46:24,843] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:46:24,844] {logging_mixin.py:115} INFO - [2022-06-28 14:46:24,844] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:46:25,291] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:46:28,217] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:46:28,231] {logging_mixin.py:115} INFO - [2022-06-28 14:46:28,231] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:46:28,243] {logging_mixin.py:115} INFO - [2022-06-28 14:46:28,243] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:46:28,251] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.414 seconds
+[2022-06-28 14:47:45,508] {processor.py:153} INFO - Started process (PID=37) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:47:45,509] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:47:45,510] {logging_mixin.py:115} INFO - [2022-06-28 14:47:45,510] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:47:47,094] {logging_mixin.py:115} INFO - [2022-06-28 14:47:47,093] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 13, in <module>
+    from scripts.process_food_waste_data import process_food_waste_data
+  File "/opt/airflow/dags/scripts/process_food_waste_data.py", line 99
+    df_schema.write.parquet(f"gs://{BUCKET}/{processed_folder}/food_waste")\
+            ^
+SyntaxError: invalid syntax
+[2022-06-28 14:47:47,094] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:47:47,111] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 1.606 seconds
+[2022-06-28 14:48:18,081] {processor.py:153} INFO - Started process (PID=74) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:48:18,081] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:48:18,081] {logging_mixin.py:115} INFO - [2022-06-28 14:48:18,081] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:48:18,418] {logging_mixin.py:115} INFO - [2022-06-28 14:48:18,418] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 13, in <module>
+    from scripts.process_food_waste_data import process_food_waste_data
+  File "/opt/airflow/dags/scripts/process_food_waste_data.py", line 99
+    df_schema.write.parquet(f"gs://{BUCKET}/{processed_folder}/food_waste")\
+            ^
+SyntaxError: invalid syntax
+[2022-06-28 14:48:18,418] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:48:18,430] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.351 seconds
+[2022-06-28 14:48:49,265] {processor.py:153} INFO - Started process (PID=106) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:48:49,265] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:48:49,266] {logging_mixin.py:115} INFO - [2022-06-28 14:48:49,266] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:48:49,591] {logging_mixin.py:115} INFO - [2022-06-28 14:48:49,591] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 13, in <module>
+    from scripts.process_food_waste_data import process_food_waste_data
+  File "/opt/airflow/dags/scripts/process_food_waste_data.py", line 99
+    df_schema.write.parquet(f"gs://{BUCKET}/{processed_folder}/food_waste")\
+            ^
+SyntaxError: invalid syntax
+[2022-06-28 14:48:49,591] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:48:49,604] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.345 seconds
+[2022-06-28 14:49:20,418] {processor.py:153} INFO - Started process (PID=139) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:49:20,427] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:49:20,427] {logging_mixin.py:115} INFO - [2022-06-28 14:49:20,427] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:49:20,792] {logging_mixin.py:115} INFO - [2022-06-28 14:49:20,791] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 13, in <module>
+    from scripts.process_food_waste_data import process_food_waste_data
+  File "/opt/airflow/dags/scripts/process_food_waste_data.py", line 99
+    df_schema.write.parquet(f"gs://{BUCKET}/{processed_folder}/food_waste")\
+            ^
+SyntaxError: invalid syntax
+[2022-06-28 14:49:20,792] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:49:20,803] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.387 seconds
+[2022-06-28 14:50:20,920] {processor.py:153} INFO - Started process (PID=37) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:50:20,922] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:50:20,922] {logging_mixin.py:115} INFO - [2022-06-28 14:50:20,922] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:50:22,835] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:50:31,120] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:50:31,148] {logging_mixin.py:115} INFO - [2022-06-28 14:50:31,147] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:50:31,178] {logging_mixin.py:115} INFO - [2022-06-28 14:50:31,178] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:50:31,195] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 10.278 seconds
+[2022-06-28 14:51:01,596] {processor.py:153} INFO - Started process (PID=430) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:51:01,596] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:51:01,597] {logging_mixin.py:115} INFO - [2022-06-28 14:51:01,596] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:51:02,114] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:51:05,187] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:51:05,201] {logging_mixin.py:115} INFO - [2022-06-28 14:51:05,201] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:51:05,212] {logging_mixin.py:115} INFO - [2022-06-28 14:51:05,212] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:51:05,221] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.627 seconds
+[2022-06-28 14:51:35,866] {processor.py:153} INFO - Started process (PID=772) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:51:35,867] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:51:35,867] {logging_mixin.py:115} INFO - [2022-06-28 14:51:35,867] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:51:36,370] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:51:39,244] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:51:39,258] {logging_mixin.py:115} INFO - [2022-06-28 14:51:39,257] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:51:39,269] {logging_mixin.py:115} INFO - [2022-06-28 14:51:39,269] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:51:39,276] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.412 seconds
+[2022-06-28 14:52:10,061] {processor.py:153} INFO - Started process (PID=1095) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:52:10,070] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:52:10,070] {logging_mixin.py:115} INFO - [2022-06-28 14:52:10,070] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:52:10,672] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:52:14,268] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:52:14,290] {logging_mixin.py:115} INFO - [2022-06-28 14:52:14,289] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:52:14,312] {logging_mixin.py:115} INFO - [2022-06-28 14:52:14,312] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:52:14,325] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.266 seconds
+[2022-06-28 14:52:44,406] {processor.py:153} INFO - Started process (PID=1405) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:52:44,407] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:52:44,407] {logging_mixin.py:115} INFO - [2022-06-28 14:52:44,407] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:52:44,899] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:52:48,195] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:52:48,208] {logging_mixin.py:115} INFO - [2022-06-28 14:52:48,208] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:52:48,221] {logging_mixin.py:115} INFO - [2022-06-28 14:52:48,221] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:52:48,229] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.825 seconds
+[2022-06-28 14:53:35,314] {processor.py:153} INFO - Started process (PID=38) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:53:35,316] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:53:35,316] {logging_mixin.py:115} INFO - [2022-06-28 14:53:35,316] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:53:37,093] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:53:46,113] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:53:46,163] {logging_mixin.py:115} INFO - [2022-06-28 14:53:46,162] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:53:46,170] {logging_mixin.py:115} INFO - [2022-06-28 14:53:46,169] {dag.py:2398} INFO - Creating ORM DAG for data_to_dw_bq
+[2022-06-28 14:53:46,179] {logging_mixin.py:115} INFO - [2022-06-28 14:53:46,179] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:53:46,191] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 10.881 seconds
+[2022-06-28 14:54:16,491] {processor.py:153} INFO - Started process (PID=424) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:54:16,493] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:54:16,493] {logging_mixin.py:115} INFO - [2022-06-28 14:54:16,493] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:54:16,970] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:54:19,958] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:54:19,972] {logging_mixin.py:115} INFO - [2022-06-28 14:54:19,972] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:54:19,983] {logging_mixin.py:115} INFO - [2022-06-28 14:54:19,983] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:54:19,993] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.504 seconds
+[2022-06-28 14:54:50,697] {processor.py:153} INFO - Started process (PID=765) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:54:50,697] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:54:50,698] {logging_mixin.py:115} INFO - [2022-06-28 14:54:50,698] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:54:51,328] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:54:54,304] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:54:54,319] {logging_mixin.py:115} INFO - [2022-06-28 14:54:54,319] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:54:54,332] {logging_mixin.py:115} INFO - [2022-06-28 14:54:54,332] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:54:54,341] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.646 seconds
+[2022-06-28 14:55:25,118] {processor.py:153} INFO - Started process (PID=1096) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:55:25,118] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:55:25,118] {logging_mixin.py:115} INFO - [2022-06-28 14:55:25,118] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:55:25,591] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:55:28,637] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:55:28,659] {logging_mixin.py:115} INFO - [2022-06-28 14:55:28,659] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:55:28,683] {logging_mixin.py:115} INFO - [2022-06-28 14:55:28,683] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:55:28,696] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.580 seconds
+[2022-06-28 14:55:59,442] {processor.py:153} INFO - Started process (PID=1446) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:55:59,443] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:55:59,444] {logging_mixin.py:115} INFO - [2022-06-28 14:55:59,443] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:55:59,885] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:56:03,115] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:56:03,130] {logging_mixin.py:115} INFO - [2022-06-28 14:56:03,129] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:56:03,141] {logging_mixin.py:115} INFO - [2022-06-28 14:56:03,141] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:56:03,149] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.711 seconds
+[2022-06-28 14:56:33,625] {processor.py:153} INFO - Started process (PID=1764) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:56:33,626] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:56:33,626] {logging_mixin.py:115} INFO - [2022-06-28 14:56:33,626] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:56:34,095] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:56:37,027] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:56:37,040] {logging_mixin.py:115} INFO - [2022-06-28 14:56:37,040] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:56:37,053] {logging_mixin.py:115} INFO - [2022-06-28 14:56:37,053] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:56:37,062] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.439 seconds
+[2022-06-28 14:57:07,155] {processor.py:153} INFO - Started process (PID=2077) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:57:07,156] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:57:07,156] {logging_mixin.py:115} INFO - [2022-06-28 14:57:07,156] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:57:07,605] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:57:10,532] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:57:10,547] {logging_mixin.py:115} INFO - [2022-06-28 14:57:10,546] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:57:10,558] {logging_mixin.py:115} INFO - [2022-06-28 14:57:10,558] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:57:10,575] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.424 seconds
+[2022-06-28 14:57:40,794] {processor.py:153} INFO - Started process (PID=2388) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:57:40,794] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:57:40,794] {logging_mixin.py:115} INFO - [2022-06-28 14:57:40,794] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:57:41,451] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:57:45,396] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:57:45,431] {logging_mixin.py:115} INFO - [2022-06-28 14:57:45,431] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:57:45,450] {logging_mixin.py:115} INFO - [2022-06-28 14:57:45,450] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:57:45,460] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.669 seconds
+[2022-06-28 14:58:15,549] {processor.py:153} INFO - Started process (PID=2698) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:58:15,550] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 14:58:15,550] {logging_mixin.py:115} INFO - [2022-06-28 14:58:15,550] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:58:15,983] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 14:58:18,763] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 14:58:18,783] {logging_mixin.py:115} INFO - [2022-06-28 14:58:18,782] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 14:58:18,798] {logging_mixin.py:115} INFO - [2022-06-28 14:58:18,798] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 14:58:18,807] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.263 seconds
+[2022-06-28 15:00:21,310] {processor.py:153} INFO - Started process (PID=36) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:00:21,312] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:00:21,312] {logging_mixin.py:115} INFO - [2022-06-28 15:00:21,312] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:00:23,493] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:00:36,195] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:00:36,224] {logging_mixin.py:115} INFO - [2022-06-28 15:00:36,223] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:00:36,245] {logging_mixin.py:115} INFO - [2022-06-28 15:00:36,245] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:00:36,256] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 14.950 seconds
+[2022-06-28 15:01:06,688] {processor.py:153} INFO - Started process (PID=426) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:01:06,688] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:01:06,688] {logging_mixin.py:115} INFO - [2022-06-28 15:01:06,688] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:01:07,179] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:01:11,122] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:01:11,145] {logging_mixin.py:115} INFO - [2022-06-28 15:01:11,144] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:01:11,175] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.489 seconds
+[2022-06-28 15:01:41,876] {processor.py:153} INFO - Started process (PID=769) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:01:41,878] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:01:41,878] {logging_mixin.py:115} INFO - [2022-06-28 15:01:41,878] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:01:42,423] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:01:45,590] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:01:45,607] {logging_mixin.py:115} INFO - [2022-06-28 15:01:45,606] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:01:45,627] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.753 seconds
+[2022-06-28 15:02:16,290] {processor.py:153} INFO - Started process (PID=1103) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:02:16,292] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:02:16,292] {logging_mixin.py:115} INFO - [2022-06-28 15:02:16,292] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:02:16,772] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:02:19,869] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:02:19,883] {logging_mixin.py:115} INFO - [2022-06-28 15:02:19,882] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:02:19,903] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.614 seconds
+[2022-06-28 15:02:50,628] {processor.py:153} INFO - Started process (PID=1457) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:02:50,629] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:02:50,630] {logging_mixin.py:115} INFO - [2022-06-28 15:02:50,630] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:02:51,088] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:02:54,008] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:02:54,021] {logging_mixin.py:115} INFO - [2022-06-28 15:02:54,021] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:02:54,042] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.416 seconds
+[2022-06-28 15:03:24,375] {processor.py:153} INFO - Started process (PID=1768) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:03:24,375] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:03:24,376] {logging_mixin.py:115} INFO - [2022-06-28 15:03:24,376] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:03:24,825] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:03:27,855] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:03:27,893] {logging_mixin.py:115} INFO - [2022-06-28 15:03:27,893] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:03:27,899] {logging_mixin.py:115} INFO - [2022-06-28 15:03:27,899] {dag.py:2398} INFO - Creating ORM DAG for data_to_dw_bq
+[2022-06-28 15:03:27,906] {logging_mixin.py:115} INFO - [2022-06-28 15:03:27,906] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:03:27,915] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.542 seconds
+[2022-06-28 15:04:26,615] {processor.py:153} INFO - Started process (PID=37) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:04:26,616] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:04:26,617] {logging_mixin.py:115} INFO - [2022-06-28 15:04:26,617] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:04:28,304] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:04:36,482] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:04:36,509] {logging_mixin.py:115} INFO - [2022-06-28 15:04:36,508] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:04:36,536] {logging_mixin.py:115} INFO - [2022-06-28 15:04:36,536] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:04:36,549] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 9.937 seconds
+[2022-06-28 15:05:06,847] {processor.py:153} INFO - Started process (PID=417) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:05:06,848] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:05:06,848] {logging_mixin.py:115} INFO - [2022-06-28 15:05:06,848] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:05:07,321] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:05:10,362] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:05:10,376] {logging_mixin.py:115} INFO - [2022-06-28 15:05:10,376] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:05:10,388] {logging_mixin.py:115} INFO - [2022-06-28 15:05:10,388] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:05:10,397] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.552 seconds
+[2022-06-28 15:05:41,090] {processor.py:153} INFO - Started process (PID=765) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:05:41,099] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:05:41,099] {logging_mixin.py:115} INFO - [2022-06-28 15:05:41,099] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:05:41,630] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:05:44,477] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:05:44,491] {logging_mixin.py:115} INFO - [2022-06-28 15:05:44,490] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:05:44,502] {logging_mixin.py:115} INFO - [2022-06-28 15:05:44,502] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:05:44,509] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.422 seconds
+[2022-06-28 15:06:15,281] {processor.py:153} INFO - Started process (PID=1097) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:06:15,282] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:06:15,283] {logging_mixin.py:115} INFO - [2022-06-28 15:06:15,283] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:06:15,997] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:06:20,652] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:06:20,674] {logging_mixin.py:115} INFO - [2022-06-28 15:06:20,673] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:06:20,694] {logging_mixin.py:115} INFO - [2022-06-28 15:06:20,694] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:06:20,705] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 5.428 seconds
+[2022-06-28 15:06:50,758] {processor.py:153} INFO - Started process (PID=1452) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:06:50,760] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:06:50,761] {logging_mixin.py:115} INFO - [2022-06-28 15:06:50,761] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:06:51,207] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:06:54,220] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:06:54,236] {logging_mixin.py:115} INFO - [2022-06-28 15:06:54,235] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:06:54,248] {logging_mixin.py:115} INFO - [2022-06-28 15:06:54,248] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:06:54,255] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.503 seconds
+[2022-06-28 15:07:24,919] {processor.py:153} INFO - Started process (PID=1771) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:07:24,919] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:07:24,920] {logging_mixin.py:115} INFO - [2022-06-28 15:07:24,920] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:07:25,378] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:07:28,782] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:07:28,802] {logging_mixin.py:115} INFO - [2022-06-28 15:07:28,802] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:07:28,818] {logging_mixin.py:115} INFO - [2022-06-28 15:07:28,818] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:07:28,829] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.911 seconds
+[2022-06-28 15:07:59,422] {processor.py:153} INFO - Started process (PID=2079) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:07:59,424] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:07:59,424] {logging_mixin.py:115} INFO - [2022-06-28 15:07:59,424] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:07:59,939] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:08:03,143] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:08:03,159] {logging_mixin.py:115} INFO - [2022-06-28 15:08:03,158] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:08:03,172] {logging_mixin.py:115} INFO - [2022-06-28 15:08:03,172] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:08:03,181] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.765 seconds
+[2022-06-28 15:08:33,631] {processor.py:153} INFO - Started process (PID=2390) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:08:33,632] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:08:33,633] {logging_mixin.py:115} INFO - [2022-06-28 15:08:33,633] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:08:34,093] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:08:36,974] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:08:36,989] {logging_mixin.py:115} INFO - [2022-06-28 15:08:36,988] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:08:37,002] {logging_mixin.py:115} INFO - [2022-06-28 15:08:37,001] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:08:37,011] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.381 seconds
+[2022-06-28 15:09:07,188] {processor.py:153} INFO - Started process (PID=2699) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:09:07,188] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:09:07,189] {logging_mixin.py:115} INFO - [2022-06-28 15:09:07,189] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:09:07,643] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:09:10,671] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:09:10,685] {logging_mixin.py:115} INFO - [2022-06-28 15:09:10,685] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:09:10,697] {logging_mixin.py:115} INFO - [2022-06-28 15:09:10,697] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:09:10,707] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.520 seconds
+[2022-06-28 15:09:41,526] {processor.py:153} INFO - Started process (PID=3018) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:09:41,526] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:09:41,527] {logging_mixin.py:115} INFO - [2022-06-28 15:09:41,527] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:09:42,604] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:09:48,670] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:09:48,708] {logging_mixin.py:115} INFO - [2022-06-28 15:09:48,707] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:09:48,763] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 7.241 seconds
+[2022-06-28 15:10:18,974] {processor.py:153} INFO - Started process (PID=3328) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:10:18,976] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:10:18,976] {logging_mixin.py:115} INFO - [2022-06-28 15:10:18,976] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:10:19,477] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:10:22,592] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:10:22,606] {logging_mixin.py:115} INFO - [2022-06-28 15:10:22,605] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:10:22,625] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.653 seconds
+[2022-06-28 15:10:53,154] {processor.py:153} INFO - Started process (PID=3641) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:10:53,155] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:10:53,155] {logging_mixin.py:115} INFO - [2022-06-28 15:10:53,155] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:10:53,583] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:10:56,601] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:10:56,615] {logging_mixin.py:115} INFO - [2022-06-28 15:10:56,614] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:10:56,633] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.481 seconds
+[2022-06-28 15:11:27,587] {processor.py:153} INFO - Started process (PID=3960) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:11:27,587] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:11:27,588] {logging_mixin.py:115} INFO - [2022-06-28 15:11:27,588] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:11:28,001] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:11:30,777] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:11:30,791] {logging_mixin.py:115} INFO - [2022-06-28 15:11:30,790] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:11:30,809] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.227 seconds
+[2022-06-28 15:12:00,894] {processor.py:153} INFO - Started process (PID=4270) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:12:00,894] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:12:00,895] {logging_mixin.py:115} INFO - [2022-06-28 15:12:00,895] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:12:01,367] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:12:04,286] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:12:04,301] {logging_mixin.py:115} INFO - [2022-06-28 15:12:04,300] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:12:04,322] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.434 seconds
+[2022-06-28 15:12:35,064] {processor.py:153} INFO - Started process (PID=4580) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:12:35,065] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:12:35,065] {logging_mixin.py:115} INFO - [2022-06-28 15:12:35,065] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:12:35,512] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:12:38,394] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:12:38,409] {logging_mixin.py:115} INFO - [2022-06-28 15:12:38,409] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:12:38,430] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.368 seconds
+[2022-06-28 15:13:08,476] {processor.py:153} INFO - Started process (PID=4891) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:13:08,477] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:13:08,477] {logging_mixin.py:115} INFO - [2022-06-28 15:13:08,477] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:13:08,911] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:13:13,172] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:13:13,210] {logging_mixin.py:115} INFO - [2022-06-28 15:13:13,208] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:13:13,259] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.784 seconds
+[2022-06-28 15:13:21,625] {processor.py:153} INFO - Started process (PID=5120) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:13:21,625] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:13:21,626] {logging_mixin.py:115} INFO - [2022-06-28 15:13:21,626] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:13:22,967] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:13:32,277] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:13:32,280] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:13:32,305] {logging_mixin.py:115} INFO - [2022-06-28 15:13:32,304] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:13:32,343] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 10.721 seconds
+[2022-06-28 15:14:02,661] {processor.py:153} INFO - Started process (PID=5516) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:14:02,662] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:14:02,662] {logging_mixin.py:115} INFO - [2022-06-28 15:14:02,662] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:14:03,433] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:14:07,337] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:14:07,340] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:14:07,358] {logging_mixin.py:115} INFO - [2022-06-28 15:14:07,357] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:14:07,381] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.722 seconds
+[2022-06-28 15:14:37,445] {processor.py:153} INFO - Started process (PID=5824) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:14:37,447] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:14:37,447] {logging_mixin.py:115} INFO - [2022-06-28 15:14:37,447] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:14:38,095] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:14:45,759] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:14:45,763] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:14:45,890] {logging_mixin.py:115} INFO - [2022-06-28 15:14:45,888] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:14:45,906] {logging_mixin.py:115} INFO - [2022-06-28 15:14:45,905] {dag.py:2398} INFO - Creating ORM DAG for data_to_dw_bq
+[2022-06-28 15:14:45,936] {logging_mixin.py:115} INFO - [2022-06-28 15:14:45,935] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:14:45,969] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 8.526 seconds
+[2022-06-28 15:15:06,799] {processor.py:153} INFO - Started process (PID=6074) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:15:06,799] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:15:06,800] {logging_mixin.py:115} INFO - [2022-06-28 15:15:06,800] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:15:08,610] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:15:11,996] {logging_mixin.py:115} INFO - [2022-06-28 15:15:11,996] {process_utils.py:240} INFO - Waiting up to 5 seconds for processes to exit...
+[2022-06-28 15:15:50,525] {processor.py:153} INFO - Started process (PID=37) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:15:50,527] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:15:50,528] {logging_mixin.py:115} INFO - [2022-06-28 15:15:50,528] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:15:52,401] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:16:01,720] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:16:01,727] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:16:01,777] {logging_mixin.py:115} INFO - [2022-06-28 15:16:01,775] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:16:01,829] {logging_mixin.py:115} INFO - [2022-06-28 15:16:01,829] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:16:01,856] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 11.333 seconds
+[2022-06-28 15:16:31,915] {processor.py:153} INFO - Started process (PID=416) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:16:31,915] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:16:31,916] {logging_mixin.py:115} INFO - [2022-06-28 15:16:31,916] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:16:32,403] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:16:36,251] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:16:36,253] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:16:36,270] {logging_mixin.py:115} INFO - [2022-06-28 15:16:36,270] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:16:36,284] {logging_mixin.py:115} INFO - [2022-06-28 15:16:36,284] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:16:36,292] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.379 seconds
+[2022-06-28 15:17:07,009] {processor.py:153} INFO - Started process (PID=769) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:17:07,010] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:17:07,011] {logging_mixin.py:115} INFO - [2022-06-28 15:17:07,011] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:17:07,523] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:17:10,373] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:17:10,375] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:17:10,390] {logging_mixin.py:115} INFO - [2022-06-28 15:17:10,390] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:17:10,403] {logging_mixin.py:115} INFO - [2022-06-28 15:17:10,403] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:17:10,412] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.405 seconds
+[2022-06-28 15:17:41,305] {processor.py:153} INFO - Started process (PID=1095) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:17:41,305] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:17:41,305] {logging_mixin.py:115} INFO - [2022-06-28 15:17:41,305] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:17:41,858] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:17:49,736] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:17:49,739] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:17:49,762] {logging_mixin.py:115} INFO - [2022-06-28 15:17:49,761] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:17:49,797] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 8.494 seconds
+[2022-06-28 15:18:20,574] {processor.py:153} INFO - Started process (PID=1465) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:18:20,575] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:18:20,576] {logging_mixin.py:115} INFO - [2022-06-28 15:18:20,576] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:18:21,183] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:18:26,262] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:18:26,264] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:18:26,282] {logging_mixin.py:115} INFO - [2022-06-28 15:18:26,281] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:18:26,306] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 5.734 seconds
+[2022-06-28 15:18:56,796] {processor.py:153} INFO - Started process (PID=1776) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:18:56,796] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:18:56,797] {logging_mixin.py:115} INFO - [2022-06-28 15:18:56,797] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:18:57,255] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:19:00,025] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:19:00,028] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:19:00,041] {logging_mixin.py:115} INFO - [2022-06-28 15:19:00,041] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:19:00,060] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.268 seconds
+[2022-06-28 15:19:30,324] {processor.py:153} INFO - Started process (PID=2086) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:19:30,324] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:19:30,325] {logging_mixin.py:115} INFO - [2022-06-28 15:19:30,325] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:19:30,748] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:19:33,647] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:19:33,649] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:19:33,667] {logging_mixin.py:115} INFO - [2022-06-28 15:19:33,666] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:19:33,697] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.375 seconds
+[2022-06-28 15:20:03,777] {processor.py:153} INFO - Started process (PID=2395) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:20:03,779] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:20:03,779] {logging_mixin.py:115} INFO - [2022-06-28 15:20:03,779] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:20:04,220] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:20:07,320] {logging_mixin.py:115} INFO - ########### None
+[2022-06-28 15:20:07,322] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:20:07,340] {logging_mixin.py:115} INFO - [2022-06-28 15:20:07,340] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:20:07,366] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.591 seconds
+[2022-06-28 15:22:20,466] {processor.py:153} INFO - Started process (PID=37) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:22:20,467] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:22:20,468] {logging_mixin.py:115} INFO - [2022-06-28 15:22:20,468] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:22:21,814] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:22:30,413] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:22:30,416] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:22:30,502] {logging_mixin.py:115} INFO - [2022-06-28 15:22:30,501] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:22:30,538] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 10.074 seconds
+[2022-06-28 15:23:01,108] {processor.py:153} INFO - Started process (PID=413) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:23:01,108] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:23:01,109] {logging_mixin.py:115} INFO - [2022-06-28 15:23:01,109] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:23:01,590] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:23:04,832] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:23:04,833] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:23:04,848] {logging_mixin.py:115} INFO - [2022-06-28 15:23:04,847] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:23:04,866] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.760 seconds
+[2022-06-28 15:23:35,663] {processor.py:153} INFO - Started process (PID=765) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:23:35,663] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:23:35,663] {logging_mixin.py:115} INFO - [2022-06-28 15:23:35,663] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:23:36,189] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:23:39,066] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:23:39,068] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:23:39,083] {logging_mixin.py:115} INFO - [2022-06-28 15:23:39,082] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:23:39,100] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.440 seconds
+[2022-06-28 15:24:09,934] {processor.py:153} INFO - Started process (PID=1089) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:24:09,934] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:24:09,935] {logging_mixin.py:115} INFO - [2022-06-28 15:24:09,934] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:24:10,372] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:24:13,075] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:24:13,076] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:24:13,090] {logging_mixin.py:115} INFO - [2022-06-28 15:24:13,090] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:24:13,111] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.179 seconds
+[2022-06-28 15:24:44,069] {processor.py:153} INFO - Started process (PID=1439) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:24:44,070] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:24:44,071] {logging_mixin.py:115} INFO - [2022-06-28 15:24:44,071] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:24:44,472] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:24:47,383] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:24:47,385] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:24:47,403] {logging_mixin.py:115} INFO - [2022-06-28 15:24:47,403] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:24:47,424] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.357 seconds
+[2022-06-28 15:25:17,614] {processor.py:153} INFO - Started process (PID=1752) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:25:17,615] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:25:17,616] {logging_mixin.py:115} INFO - [2022-06-28 15:25:17,615] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:25:18,035] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:25:20,935] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:25:20,936] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:25:20,950] {logging_mixin.py:115} INFO - [2022-06-28 15:25:20,950] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:25:20,970] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.357 seconds
+[2022-06-28 15:25:51,746] {processor.py:153} INFO - Started process (PID=2062) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:25:51,746] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:25:51,747] {logging_mixin.py:115} INFO - [2022-06-28 15:25:51,747] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:25:52,172] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:25:54,907] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:25:54,908] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:25:54,923] {logging_mixin.py:115} INFO - [2022-06-28 15:25:54,923] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:25:54,954] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.210 seconds
+[2022-06-28 15:26:25,053] {processor.py:153} INFO - Started process (PID=2381) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:26:25,053] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:26:25,053] {logging_mixin.py:115} INFO - [2022-06-28 15:26:25,053] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:26:25,483] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:26:28,369] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:26:28,371] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:26:28,384] {logging_mixin.py:115} INFO - [2022-06-28 15:26:28,384] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:26:28,404] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.353 seconds
+[2022-06-28 15:26:58,595] {processor.py:153} INFO - Started process (PID=2693) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:26:58,595] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:26:58,596] {logging_mixin.py:115} INFO - [2022-06-28 15:26:58,596] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:26:59,046] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:27:02,155] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:27:02,156] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:27:02,171] {logging_mixin.py:115} INFO - [2022-06-28 15:27:02,171] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:27:02,193] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.600 seconds
+[2022-06-28 15:27:32,223] {processor.py:153} INFO - Started process (PID=3001) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:27:32,224] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:27:32,224] {logging_mixin.py:115} INFO - [2022-06-28 15:27:32,224] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:27:32,657] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:27:36,836] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:27:36,838] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:27:36,863] {logging_mixin.py:115} INFO - [2022-06-28 15:27:36,862] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:27:36,900] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.679 seconds
+[2022-06-28 15:28:07,426] {processor.py:153} INFO - Started process (PID=3319) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:28:07,426] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:28:07,426] {logging_mixin.py:115} INFO - [2022-06-28 15:28:07,426] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:28:07,860] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:28:10,705] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:28:10,707] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:28:10,721] {logging_mixin.py:115} INFO - [2022-06-28 15:28:10,721] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:28:10,741] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.317 seconds
+[2022-06-28 15:28:40,872] {processor.py:153} INFO - Started process (PID=3628) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:28:40,874] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:28:40,874] {logging_mixin.py:115} INFO - [2022-06-28 15:28:40,874] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:28:41,285] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:28:44,218] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:28:44,220] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:28:44,235] {logging_mixin.py:115} INFO - [2022-06-28 15:28:44,234] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:28:44,255] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.386 seconds
+[2022-06-28 15:29:15,135] {processor.py:153} INFO - Started process (PID=3938) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:29:15,144] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:29:15,145] {logging_mixin.py:115} INFO - [2022-06-28 15:29:15,145] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:29:15,570] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:29:18,484] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:29:18,486] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:29:18,501] {logging_mixin.py:115} INFO - [2022-06-28 15:29:18,500] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:29:18,524] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.393 seconds
+[2022-06-28 15:29:48,766] {processor.py:153} INFO - Started process (PID=4247) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:29:48,767] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:29:48,768] {logging_mixin.py:115} INFO - [2022-06-28 15:29:48,768] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:29:49,189] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:29:52,298] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:29:52,299] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:29:52,315] {logging_mixin.py:115} INFO - [2022-06-28 15:29:52,315] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:29:52,336] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.576 seconds
+[2022-06-28 15:30:22,961] {processor.py:153} INFO - Started process (PID=4558) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:30:22,962] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:30:22,962] {logging_mixin.py:115} INFO - [2022-06-28 15:30:22,962] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:30:23,380] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:30:26,365] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:30:26,367] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:30:26,380] {logging_mixin.py:115} INFO - [2022-06-28 15:30:26,380] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:30:26,398] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.443 seconds
+[2022-06-28 15:30:57,050] {processor.py:153} INFO - Started process (PID=4875) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:30:57,052] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:30:57,052] {logging_mixin.py:115} INFO - [2022-06-28 15:30:57,052] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:30:57,482] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:31:00,232] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:31:00,234] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:31:00,248] {logging_mixin.py:115} INFO - [2022-06-28 15:31:00,248] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:31:00,268] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.219 seconds
+[2022-06-28 15:31:30,315] {processor.py:153} INFO - Started process (PID=5184) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:31:30,315] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:31:30,316] {logging_mixin.py:115} INFO - [2022-06-28 15:31:30,316] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:31:30,734] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:31:33,516] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:31:33,518] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:31:33,533] {logging_mixin.py:115} INFO - [2022-06-28 15:31:33,532] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:31:33,555] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.243 seconds
+[2022-06-28 15:32:03,409] {processor.py:153} INFO - Started process (PID=5493) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:32:03,410] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:32:03,410] {logging_mixin.py:115} INFO - [2022-06-28 15:32:03,410] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:32:03,833] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:32:06,633] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:32:06,634] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:32:06,671] {logging_mixin.py:115} INFO - [2022-06-28 15:32:06,670] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:32:06,694] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.291 seconds
+[2022-06-28 15:32:36,775] {processor.py:153} INFO - Started process (PID=5805) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:32:36,776] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:32:36,776] {logging_mixin.py:115} INFO - [2022-06-28 15:32:36,776] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:32:37,233] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:32:40,143] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:32:40,144] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:32:40,159] {logging_mixin.py:115} INFO - [2022-06-28 15:32:40,159] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:32:40,171] {logging_mixin.py:115} INFO - [2022-06-28 15:32:40,171] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:32:40,180] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.410 seconds
+[2022-06-28 15:33:10,254] {processor.py:153} INFO - Started process (PID=6114) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:33:10,256] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:33:10,256] {logging_mixin.py:115} INFO - [2022-06-28 15:33:10,256] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:33:10,667] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:33:14,145] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:33:14,148] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:33:14,177] {logging_mixin.py:115} INFO - [2022-06-28 15:33:14,176] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:33:14,213] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.961 seconds
+[2022-06-28 15:33:44,580] {processor.py:153} INFO - Started process (PID=6424) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:33:44,582] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:33:44,583] {logging_mixin.py:115} INFO - [2022-06-28 15:33:44,583] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:33:45,017] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:33:47,908] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:33:47,909] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:33:47,923] {logging_mixin.py:115} INFO - [2022-06-28 15:33:47,923] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:33:47,942] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.367 seconds
+[2022-06-28 15:34:18,778] {processor.py:153} INFO - Started process (PID=6736) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:34:18,778] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:34:18,778] {logging_mixin.py:115} INFO - [2022-06-28 15:34:18,778] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:34:19,199] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:34:22,164] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:34:22,167] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:34:22,184] {logging_mixin.py:115} INFO - [2022-06-28 15:34:22,183] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:34:22,207] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.431 seconds
+[2022-06-28 15:34:52,295] {processor.py:153} INFO - Started process (PID=7048) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:34:52,296] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:34:52,296] {logging_mixin.py:115} INFO - [2022-06-28 15:34:52,296] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:34:52,777] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:34:56,013] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:34:56,014] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:34:56,029] {logging_mixin.py:115} INFO - [2022-06-28 15:34:56,028] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:34:56,059] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.770 seconds
+[2022-06-28 15:35:26,148] {processor.py:153} INFO - Started process (PID=7358) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:35:26,148] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:35:26,149] {logging_mixin.py:115} INFO - [2022-06-28 15:35:26,149] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:35:26,573] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:35:29,637] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:35:29,638] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:35:29,652] {logging_mixin.py:115} INFO - [2022-06-28 15:35:29,652] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:35:29,673] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.528 seconds
+[2022-06-28 15:35:59,651] {processor.py:153} INFO - Started process (PID=7669) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:35:59,652] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:35:59,652] {logging_mixin.py:115} INFO - [2022-06-28 15:35:59,652] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:36:00,097] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:36:03,276] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:36:03,278] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:36:03,316] {logging_mixin.py:115} INFO - [2022-06-28 15:36:03,315] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:36:03,338] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.690 seconds
+[2022-06-28 15:36:33,609] {processor.py:153} INFO - Started process (PID=7991) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:36:33,609] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:36:33,609] {logging_mixin.py:115} INFO - [2022-06-28 15:36:33,609] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:36:34,075] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:36:38,195] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:36:38,198] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:36:38,218] {logging_mixin.py:115} INFO - [2022-06-28 15:36:38,217] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:36:38,248] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.641 seconds
+[2022-06-28 15:37:08,464] {processor.py:153} INFO - Started process (PID=8307) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:37:08,464] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:37:08,465] {logging_mixin.py:115} INFO - [2022-06-28 15:37:08,465] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:37:08,965] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:37:13,234] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:37:13,236] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:37:13,293] {logging_mixin.py:115} INFO - [2022-06-28 15:37:13,293] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:37:13,300] {logging_mixin.py:115} INFO - [2022-06-28 15:37:13,300] {dag.py:2398} INFO - Creating ORM DAG for data_to_dw_bq
+[2022-06-28 15:37:13,310] {logging_mixin.py:115} INFO - [2022-06-28 15:37:13,310] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:37:13,322] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.859 seconds
+[2022-06-28 15:37:43,642] {processor.py:153} INFO - Started process (PID=8624) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:37:43,643] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:37:43,644] {logging_mixin.py:115} INFO - [2022-06-28 15:37:43,644] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:37:44,113] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:37:48,124] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:37:48,127] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:37:48,149] {logging_mixin.py:115} INFO - [2022-06-28 15:37:48,148] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:37:48,170] {logging_mixin.py:115} INFO - [2022-06-28 15:37:48,170] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:37:48,181] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.541 seconds
+[2022-06-28 15:38:18,615] {processor.py:153} INFO - Started process (PID=8934) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:38:18,616] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:38:18,617] {logging_mixin.py:115} INFO - [2022-06-28 15:38:18,617] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:38:19,056] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:38:22,513] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:38:22,516] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:38:22,539] {logging_mixin.py:115} INFO - [2022-06-28 15:38:22,538] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:38:22,559] {logging_mixin.py:115} INFO - [2022-06-28 15:38:22,559] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:38:22,572] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.959 seconds
+[2022-06-28 15:38:53,127] {processor.py:153} INFO - Started process (PID=9243) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:38:53,128] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:38:53,129] {logging_mixin.py:115} INFO - [2022-06-28 15:38:53,129] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:38:53,607] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:38:57,259] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:38:57,261] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:38:57,283] {logging_mixin.py:115} INFO - [2022-06-28 15:38:57,282] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:38:57,306] {logging_mixin.py:115} INFO - [2022-06-28 15:38:57,306] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:38:57,318] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.193 seconds
+[2022-06-28 15:39:27,709] {processor.py:153} INFO - Started process (PID=9551) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:39:27,710] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 15:39:27,711] {logging_mixin.py:115} INFO - [2022-06-28 15:39:27,711] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:39:28,182] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 15:39:31,608] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 15:39:31,611] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 15:39:31,631] {logging_mixin.py:115} INFO - [2022-06-28 15:39:31,631] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 15:39:31,648] {logging_mixin.py:115} INFO - [2022-06-28 15:39:31,648] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 15:39:31,659] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.953 seconds
+[2022-06-28 16:03:36,943] {processor.py:153} INFO - Started process (PID=40) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:03:36,944] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:03:36,949] {logging_mixin.py:115} INFO - [2022-06-28 16:03:36,949] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:03:40,130] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:03:50,476] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:03:50,480] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:03:50,555] {logging_mixin.py:115} INFO - [2022-06-28 16:03:50,554] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:03:50,580] {logging_mixin.py:115} INFO - [2022-06-28 16:03:50,580] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:03:50,600] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 13.670 seconds
+[2022-06-28 16:04:21,104] {processor.py:153} INFO - Started process (PID=423) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:04:21,106] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:04:21,106] {logging_mixin.py:115} INFO - [2022-06-28 16:04:21,106] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:04:21,822] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:04:44,213] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:04:44,224] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:04:44,316] {logging_mixin.py:115} INFO - [2022-06-28 16:04:44,314] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:04:44,456] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 23.354 seconds
+[2022-06-28 16:05:14,948] {processor.py:153} INFO - Started process (PID=851) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:05:14,950] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:05:14,950] {logging_mixin.py:115} INFO - [2022-06-28 16:05:14,950] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:05:15,405] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:05:19,494] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:05:19,497] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:05:19,519] {logging_mixin.py:115} INFO - [2022-06-28 16:05:19,519] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:05:19,552] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.608 seconds
+[2022-06-28 16:05:50,296] {processor.py:153} INFO - Started process (PID=1158) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:05:50,297] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:05:50,298] {logging_mixin.py:115} INFO - [2022-06-28 16:05:50,298] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:05:50,799] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:05:53,841] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:05:53,844] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:05:53,862] {logging_mixin.py:115} INFO - [2022-06-28 16:05:53,862] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:05:53,887] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.594 seconds
+[2022-06-28 16:06:23,999] {processor.py:153} INFO - Started process (PID=1437) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:06:24,001] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:06:24,002] {logging_mixin.py:115} INFO - [2022-06-28 16:06:24,001] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:06:25,602] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:06:37,192] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:06:37,200] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:06:37,254] {logging_mixin.py:115} INFO - [2022-06-28 16:06:37,253] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:06:37,327] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 13.334 seconds
+[2022-06-28 16:07:07,544] {processor.py:153} INFO - Started process (PID=1802) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:07:07,544] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:07:07,544] {logging_mixin.py:115} INFO - [2022-06-28 16:07:07,544] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:07:07,990] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:07:11,023] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:07:11,025] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:07:11,040] {logging_mixin.py:115} INFO - [2022-06-28 16:07:11,040] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:07:11,061] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.520 seconds
+[2022-06-28 16:07:41,216] {processor.py:153} INFO - Started process (PID=2111) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:07:41,218] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:07:41,219] {logging_mixin.py:115} INFO - [2022-06-28 16:07:41,219] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:07:41,661] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:07:56,034] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:07:56,040] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:07:56,096] {logging_mixin.py:115} INFO - [2022-06-28 16:07:56,095] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:07:56,171] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 14.960 seconds
+[2022-06-28 16:08:26,809] {processor.py:153} INFO - Started process (PID=2440) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:08:26,809] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:08:26,809] {logging_mixin.py:115} INFO - [2022-06-28 16:08:26,809] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:08:27,286] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:08:30,677] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:08:30,681] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:08:30,715] {logging_mixin.py:115} INFO - [2022-06-28 16:08:30,714] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:08:30,773] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.966 seconds
+[2022-06-28 16:09:01,448] {processor.py:153} INFO - Started process (PID=2749) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:09:01,451] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:09:01,452] {logging_mixin.py:115} INFO - [2022-06-28 16:09:01,452] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:09:03,431] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:09:14,963] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:09:14,967] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:09:15,000] {logging_mixin.py:115} INFO - [2022-06-28 16:09:14,999] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:09:15,045] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 13.604 seconds
+[2022-06-28 16:09:45,820] {processor.py:153} INFO - Started process (PID=3083) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:09:45,822] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:09:45,822] {logging_mixin.py:115} INFO - [2022-06-28 16:09:45,822] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:09:46,347] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:09:50,443] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:09:50,447] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:09:50,465] {logging_mixin.py:115} INFO - [2022-06-28 16:09:50,465] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:09:50,494] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.678 seconds
+[2022-06-28 16:10:21,183] {processor.py:153} INFO - Started process (PID=3394) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:10:21,184] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:10:21,184] {logging_mixin.py:115} INFO - [2022-06-28 16:10:21,184] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:10:21,609] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:10:29,178] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:10:29,194] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:10:29,337] {logging_mixin.py:115} INFO - [2022-06-28 16:10:29,332] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:10:29,452] {logging_mixin.py:115} INFO - [2022-06-28 16:10:29,452] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:10:29,509] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 8.327 seconds
+[2022-06-28 16:10:59,954] {processor.py:153} INFO - Started process (PID=3720) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:10:59,955] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:10:59,956] {logging_mixin.py:115} INFO - [2022-06-28 16:10:59,956] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:11:00,404] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:11:03,695] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:11:03,698] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:11:03,716] {logging_mixin.py:115} INFO - [2022-06-28 16:11:03,715] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:11:03,732] {logging_mixin.py:115} INFO - [2022-06-28 16:11:03,732] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:11:03,741] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.792 seconds
+[2022-06-28 16:11:34,129] {processor.py:153} INFO - Started process (PID=4030) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:11:34,131] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:11:34,131] {logging_mixin.py:115} INFO - [2022-06-28 16:11:34,131] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:11:34,583] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:11:37,595] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:11:37,597] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:11:37,611] {logging_mixin.py:115} INFO - [2022-06-28 16:11:37,610] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:11:37,624] {logging_mixin.py:115} INFO - [2022-06-28 16:11:37,624] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:11:37,632] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.505 seconds
+[2022-06-28 16:12:07,736] {processor.py:153} INFO - Started process (PID=4339) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:12:07,736] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:12:07,736] {logging_mixin.py:115} INFO - [2022-06-28 16:12:07,736] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:12:08,366] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:12:19,321] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:12:19,328] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:12:19,381] {logging_mixin.py:115} INFO - [2022-06-28 16:12:19,379] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:12:19,426] {logging_mixin.py:115} INFO - [2022-06-28 16:12:19,426] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:12:19,452] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 11.719 seconds
+[2022-06-28 16:12:49,808] {processor.py:153} INFO - Started process (PID=4668) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:12:49,809] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:12:49,809] {logging_mixin.py:115} INFO - [2022-06-28 16:12:49,809] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:12:50,256] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:12:53,139] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:12:53,140] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:12:53,155] {logging_mixin.py:115} INFO - [2022-06-28 16:12:53,154] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:12:53,166] {logging_mixin.py:115} INFO - [2022-06-28 16:12:53,166] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:12:53,173] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.371 seconds
+[2022-06-28 16:13:23,224] {processor.py:153} INFO - Started process (PID=4980) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:13:23,225] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:13:23,225] {logging_mixin.py:115} INFO - [2022-06-28 16:13:23,225] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:13:23,680] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:13:26,669] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:13:26,671] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:13:26,685] {logging_mixin.py:115} INFO - [2022-06-28 16:13:26,685] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:13:26,700] {logging_mixin.py:115} INFO - [2022-06-28 16:13:26,700] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:13:26,709] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.488 seconds
+[2022-06-28 16:13:56,913] {processor.py:153} INFO - Started process (PID=5290) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:13:56,914] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:13:56,915] {logging_mixin.py:115} INFO - [2022-06-28 16:13:56,914] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:13:57,447] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:14:07,329] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:14:07,334] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:14:07,377] {logging_mixin.py:115} INFO - [2022-06-28 16:14:07,375] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:14:07,418] {logging_mixin.py:115} INFO - [2022-06-28 16:14:07,417] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:14:07,440] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 10.532 seconds
+[2022-06-28 16:14:37,499] {processor.py:153} INFO - Started process (PID=5627) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:14:37,501] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:14:37,502] {logging_mixin.py:115} INFO - [2022-06-28 16:14:37,502] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:14:37,964] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:14:40,978] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:14:40,980] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:14:40,994] {logging_mixin.py:115} INFO - [2022-06-28 16:14:40,994] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:14:41,006] {logging_mixin.py:115} INFO - [2022-06-28 16:14:41,006] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:14:41,014] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.519 seconds
+[2022-06-28 16:15:11,588] {processor.py:153} INFO - Started process (PID=5941) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:15:11,590] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:15:11,591] {logging_mixin.py:115} INFO - [2022-06-28 16:15:11,591] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:15:12,034] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:15:18,773] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:15:18,782] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:15:18,853] {logging_mixin.py:115} INFO - [2022-06-28 16:15:18,851] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:15:18,919] {logging_mixin.py:115} INFO - [2022-06-28 16:15:18,919] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:15:18,958] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 7.376 seconds
+[2022-06-28 16:15:49,133] {processor.py:153} INFO - Started process (PID=6268) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:15:49,134] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:15:49,135] {logging_mixin.py:115} INFO - [2022-06-28 16:15:49,134] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:15:49,141] {logging_mixin.py:115} INFO - [2022-06-28 16:15:49,140] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:15:49,141] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:15:49,176] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.048 seconds
+[2022-06-28 16:16:19,305] {processor.py:153} INFO - Started process (PID=6429) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:16:19,306] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:16:19,307] {logging_mixin.py:115} INFO - [2022-06-28 16:16:19,307] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:16:19,311] {logging_mixin.py:115} INFO - [2022-06-28 16:16:19,311] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:16:19,312] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:16:19,329] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.028 seconds
+[2022-06-28 16:16:49,426] {processor.py:153} INFO - Started process (PID=6558) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:16:49,427] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:16:49,428] {logging_mixin.py:115} INFO - [2022-06-28 16:16:49,428] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:16:49,429] {logging_mixin.py:115} INFO - [2022-06-28 16:16:49,429] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:16:49,430] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:16:49,446] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.022 seconds
+[2022-06-28 16:18:33,663] {processor.py:153} INFO - Started process (PID=46) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:18:33,664] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:18:33,665] {logging_mixin.py:115} INFO - [2022-06-28 16:18:33,665] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:18:33,670] {logging_mixin.py:115} INFO - [2022-06-28 16:18:33,669] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:18:33,671] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:18:33,703] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.045 seconds
+[2022-06-28 16:19:03,900] {processor.py:153} INFO - Started process (PID=222) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:19:03,901] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:19:03,902] {logging_mixin.py:115} INFO - [2022-06-28 16:19:03,902] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:19:03,910] {logging_mixin.py:115} INFO - [2022-06-28 16:19:03,909] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:19:03,911] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:19:03,977] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.086 seconds
+[2022-06-28 16:19:34,427] {processor.py:153} INFO - Started process (PID=384) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:19:34,428] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:19:34,429] {logging_mixin.py:115} INFO - [2022-06-28 16:19:34,429] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:19:34,433] {logging_mixin.py:115} INFO - [2022-06-28 16:19:34,432] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:19:34,433] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:19:34,449] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.026 seconds
+[2022-06-28 16:20:04,529] {processor.py:153} INFO - Started process (PID=414) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:20:04,529] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:20:04,530] {logging_mixin.py:115} INFO - [2022-06-28 16:20:04,530] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:20:04,532] {logging_mixin.py:115} INFO - [2022-06-28 16:20:04,532] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:20:04,532] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:20:04,548] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.023 seconds
+[2022-06-28 16:20:34,765] {processor.py:153} INFO - Started process (PID=583) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:20:34,768] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:20:34,769] {logging_mixin.py:115} INFO - [2022-06-28 16:20:34,768] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:20:34,773] {logging_mixin.py:115} INFO - [2022-06-28 16:20:34,772] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:20:34,773] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:20:34,800] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.040 seconds
+[2022-06-28 16:21:04,939] {processor.py:153} INFO - Started process (PID=753) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:21:04,939] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:21:04,939] {logging_mixin.py:115} INFO - [2022-06-28 16:21:04,939] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:21:04,941] {logging_mixin.py:115} INFO - [2022-06-28 16:21:04,940] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:21:04,941] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:21:04,956] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.019 seconds
+[2022-06-28 16:21:35,155] {processor.py:153} INFO - Started process (PID=914) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:21:35,156] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:21:35,157] {logging_mixin.py:115} INFO - [2022-06-28 16:21:35,156] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:21:35,161] {logging_mixin.py:115} INFO - [2022-06-28 16:21:35,160] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from airflow.contrib.operators import GCSDeleteOperator
+ImportError: cannot import name 'GCSDeleteOperator' from 'airflow.contrib.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/contrib/operators/__init__.py)
+[2022-06-28 16:21:35,161] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:21:35,181] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.029 seconds
+[2022-06-28 16:21:55,318] {processor.py:153} INFO - Started process (PID=1076) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:21:55,319] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:21:55,320] {logging_mixin.py:115} INFO - [2022-06-28 16:21:55,320] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:21:58,373] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:22:11,053] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:22:11,059] {logging_mixin.py:115} INFO - [2022-06-28 16:22:11,056] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 85, in <module>
+    objects = [f"{processed_folder}/{table_name}/*"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py", line 294, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+TypeError: __init__() missing 1 required positional argument: 'task_id'
+[2022-06-28 16:22:11,059] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:22:11,090] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 15.779 seconds
+[2022-06-28 16:23:03,308] {processor.py:153} INFO - Started process (PID=46) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:23:03,312] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:23:03,313] {logging_mixin.py:115} INFO - [2022-06-28 16:23:03,313] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:23:05,647] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:23:33,317] {logging_mixin.py:115} INFO - [2022-06-28 16:23:33,315] {timeout.py:67} ERROR - Process timed out, PID: 46
+[2022-06-28 16:23:33,320] {logging_mixin.py:115} INFO - [2022-06-28 16:23:33,317] {clientserver.py:538} INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/03_data to_dw_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 46
+[2022-06-28 16:23:33,320] {logging_mixin.py:115} INFO - [2022-06-28 16:23:33,320] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 16:23:33,322] {logging_mixin.py:115} INFO - [2022-06-28 16:23:33,321] {java_gateway.py:1056} ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/03_data to_dw_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 46
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 540, in send_command
+    "Error while sending or receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2022-06-28 16:23:33,323] {logging_mixin.py:115} INFO - [2022-06-28 16:23:33,323] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 16:23:33,325] {logging_mixin.py:115} INFO - [2022-06-28 16:23:33,324] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 13, in <module>
+    from scripts.process_food_waste_data import process_food_waste_data
+  File "/opt/airflow/dags/scripts/process_food_waste_data.py", line 24, in <module>
+    .appName('process')\
+  File "/opt/airflow/spark/spark-3.2.1-bin-hadoop3.2/python/pyspark/sql/session.py", line 233, in getOrCreate
+    session._jsparkSession.sessionState().conf().setConfString(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    answer, self.gateway_client, self.target_id, self.name)
+  File "/opt/airflow/spark/spark-3.2.1-bin-hadoop3.2/python/pyspark/sql/utils.py", line 111, in deco
+    return f(*a, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/protocol.py", line 336, in get_return_value
+    format(target_id, ".", name))
+py4j.protocol.Py4JError: An error occurred while calling o23.sessionState
+[2022-06-28 16:23:33,326] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:23:33,382] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 30.080 seconds
+[2022-06-28 16:24:04,154] {processor.py:153} INFO - Started process (PID=450) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:24:04,155] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:24:04,156] {logging_mixin.py:115} INFO - [2022-06-28 16:24:04,156] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:24:04,670] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:24:08,649] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:24:08,654] {logging_mixin.py:115} INFO - [2022-06-28 16:24:08,652] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 85, in <module>
+    objects = [f"{processed_folder}/{table_name}/*"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py", line 294, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+TypeError: __init__() missing 1 required positional argument: 'task_id'
+[2022-06-28 16:24:08,654] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:24:08,677] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 4.525 seconds
+[2022-06-28 16:24:39,366] {processor.py:153} INFO - Started process (PID=812) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:24:39,368] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:24:39,368] {logging_mixin.py:115} INFO - [2022-06-28 16:24:39,368] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:24:39,951] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:24:43,039] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:24:43,041] {logging_mixin.py:115} INFO - [2022-06-28 16:24:43,040] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 85, in <module>
+    objects = [f"{processed_folder}/{table_name}/*"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py", line 294, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+TypeError: __init__() missing 1 required positional argument: 'task_id'
+[2022-06-28 16:24:43,041] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:24:43,055] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.692 seconds
+[2022-06-28 16:25:07,957] {processor.py:153} INFO - Started process (PID=1015) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:25:07,958] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:25:07,958] {logging_mixin.py:115} INFO - [2022-06-28 16:25:07,958] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:25:08,418] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:25:11,822] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:25:11,824] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:25:11,883] {logging_mixin.py:115} INFO - [2022-06-28 16:25:11,882] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:25:11,900] {logging_mixin.py:115} INFO - [2022-06-28 16:25:11,900] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:25:11,914] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.963 seconds
+[2022-06-28 16:25:42,120] {processor.py:153} INFO - Started process (PID=1325) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:25:42,120] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:25:42,121] {logging_mixin.py:115} INFO - [2022-06-28 16:25:42,121] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:25:42,569] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:25:53,865] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:25:53,875] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:25:53,960] {logging_mixin.py:115} INFO - [2022-06-28 16:25:53,957] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:25:54,045] {logging_mixin.py:115} INFO - [2022-06-28 16:25:54,045] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:25:54,077] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 11.959 seconds
+[2022-06-28 16:26:24,678] {processor.py:153} INFO - Started process (PID=1652) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:26:24,679] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:26:24,679] {logging_mixin.py:115} INFO - [2022-06-28 16:26:24,679] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:26:25,182] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:26:28,484] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:26:28,487] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:26:28,507] {logging_mixin.py:115} INFO - [2022-06-28 16:26:28,507] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:26:28,526] {logging_mixin.py:115} INFO - [2022-06-28 16:26:28,526] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:26:28,538] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.861 seconds
+[2022-06-28 16:26:58,863] {processor.py:153} INFO - Started process (PID=1972) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:26:58,864] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:26:58,865] {logging_mixin.py:115} INFO - [2022-06-28 16:26:58,865] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:26:59,334] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:27:11,447] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:27:11,456] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:27:11,531] {logging_mixin.py:115} INFO - [2022-06-28 16:27:11,529] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:27:11,610] {logging_mixin.py:115} INFO - [2022-06-28 16:27:11,610] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:27:11,660] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 12.802 seconds
+[2022-06-28 16:27:42,091] {processor.py:153} INFO - Started process (PID=2300) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:27:42,092] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:27:42,092] {logging_mixin.py:115} INFO - [2022-06-28 16:27:42,092] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:27:42,516] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:27:45,496] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:27:45,498] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:27:45,512] {logging_mixin.py:115} INFO - [2022-06-28 16:27:45,512] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:27:45,525] {logging_mixin.py:115} INFO - [2022-06-28 16:27:45,525] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:27:45,533] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.444 seconds
+[2022-06-28 16:28:16,321] {processor.py:153} INFO - Started process (PID=2612) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:28:16,321] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:28:16,321] {logging_mixin.py:115} INFO - [2022-06-28 16:28:16,321] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:28:16,754] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:28:19,691] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:28:19,693] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:28:19,707] {logging_mixin.py:115} INFO - [2022-06-28 16:28:19,707] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:28:19,720] {logging_mixin.py:115} INFO - [2022-06-28 16:28:19,720] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:28:19,728] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.409 seconds
+[2022-06-28 16:28:50,520] {processor.py:153} INFO - Started process (PID=2934) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:28:50,520] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:28:50,520] {logging_mixin.py:115} INFO - [2022-06-28 16:28:50,520] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:28:50,966] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:28:53,957] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:28:53,959] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:28:53,973] {logging_mixin.py:115} INFO - [2022-06-28 16:28:53,972] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:28:53,984] {logging_mixin.py:115} INFO - [2022-06-28 16:28:53,984] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:28:53,993] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 3.475 seconds
+[2022-06-28 16:29:24,065] {processor.py:153} INFO - Started process (PID=3240) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:29:24,065] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 16:29:24,066] {logging_mixin.py:115} INFO - [2022-06-28 16:29:24,066] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:29:24,522] {logging_mixin.py:115} INFO - ######## dtc-project-data_dtc-project-ritaafranco
+[2022-06-28 16:29:34,520] {logging_mixin.py:115} INFO - ########### dtc_project_data_bq
+[2022-06-28 16:29:34,526] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 16:29:34,603] {logging_mixin.py:115} INFO - [2022-06-28 16:29:34,601] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 16:29:34,710] {logging_mixin.py:115} INFO - [2022-06-28 16:29:34,709] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 16:29:34,792] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 10.730 seconds
+[2022-06-28 18:37:00,898] {processor.py:153} INFO - Started process (PID=48) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:37:00,899] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:37:00,900] {logging_mixin.py:115} INFO - [2022-06-28 18:37:00,899] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:37:03,380] {logging_mixin.py:115} INFO - [2022-06-28 18:37:03,379] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from utils import Configs
+ModuleNotFoundError: No module named 'utils'
+[2022-06-28 18:37:03,381] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:37:03,403] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 2.509 seconds
+[2022-06-28 18:37:33,463] {processor.py:153} INFO - Started process (PID=75) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:37:33,464] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:37:33,465] {logging_mixin.py:115} INFO - [2022-06-28 18:37:33,465] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:37:33,828] {logging_mixin.py:115} INFO - [2022-06-28 18:37:33,828] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from utils import Configs
+ModuleNotFoundError: No module named 'utils'
+[2022-06-28 18:37:33,828] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:37:33,843] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.385 seconds
+[2022-06-28 18:38:04,595] {processor.py:153} INFO - Started process (PID=107) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:38:04,596] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:38:04,596] {logging_mixin.py:115} INFO - [2022-06-28 18:38:04,596] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:38:04,996] {logging_mixin.py:115} INFO - [2022-06-28 18:38:04,995] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from utils import Configs
+ModuleNotFoundError: No module named 'utils'
+[2022-06-28 18:38:04,996] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:38:05,008] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.415 seconds
+[2022-06-28 18:38:35,752] {processor.py:153} INFO - Started process (PID=140) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:38:35,754] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:38:35,755] {logging_mixin.py:115} INFO - [2022-06-28 18:38:35,755] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:38:36,142] {logging_mixin.py:115} INFO - [2022-06-28 18:38:36,141] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from utils import Configs
+ModuleNotFoundError: No module named 'utils'
+[2022-06-28 18:38:36,142] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:38:36,153] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.406 seconds
+[2022-06-28 18:39:06,938] {processor.py:153} INFO - Started process (PID=173) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:39:06,938] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:39:06,939] {logging_mixin.py:115} INFO - [2022-06-28 18:39:06,939] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:39:07,327] {logging_mixin.py:115} INFO - [2022-06-28 18:39:07,327] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from utils import Configs
+ModuleNotFoundError: No module named 'utils'
+[2022-06-28 18:39:07,328] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:39:07,338] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.406 seconds
+[2022-06-28 18:39:38,102] {processor.py:153} INFO - Started process (PID=205) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:39:38,104] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:39:38,104] {logging_mixin.py:115} INFO - [2022-06-28 18:39:38,104] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:39:38,486] {logging_mixin.py:115} INFO - [2022-06-28 18:39:38,485] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from utils import Configs
+ModuleNotFoundError: No module named 'utils'
+[2022-06-28 18:39:38,486] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:39:38,501] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.401 seconds
+[2022-06-28 18:40:09,273] {processor.py:153} INFO - Started process (PID=237) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:40:09,273] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:40:09,274] {logging_mixin.py:115} INFO - [2022-06-28 18:40:09,274] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:40:09,603] {logging_mixin.py:115} INFO - [2022-06-28 18:40:09,602] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 7, in <module>
+    from utils import Configs
+ModuleNotFoundError: No module named 'utils'
+[2022-06-28 18:40:09,603] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:40:09,615] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.345 seconds
+[2022-06-28 18:40:39,758] {processor.py:153} INFO - Started process (PID=408) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:40:39,759] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:40:39,759] {logging_mixin.py:115} INFO - [2022-06-28 18:40:39,759] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:40:40,133] {logging_mixin.py:115} INFO - [2022-06-28 18:40:40,133] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 25, in <module>
+    SELECT * FROM {BIGQUERY_DATASET}.{Configs.table_name}_external_table;"
+AttributeError: type object 'Configs' has no attribute 'table_name'
+[2022-06-28 18:40:40,134] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:40:40,150] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.395 seconds
+[2022-06-28 18:41:10,947] {processor.py:153} INFO - Started process (PID=572) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:41:10,948] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:41:10,949] {logging_mixin.py:115} INFO - [2022-06-28 18:41:10,948] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:41:11,302] {logging_mixin.py:115} INFO - [2022-06-28 18:41:11,301] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 25, in <module>
+    SELECT * FROM {BIGQUERY_DATASET}.{Configs.table_name}_external_table;"
+AttributeError: type object 'Configs' has no attribute 'table_name'
+[2022-06-28 18:41:11,302] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:41:11,315] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.372 seconds
+[2022-06-28 18:41:41,572] {processor.py:153} INFO - Started process (PID=744) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:41:41,574] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:41:41,575] {logging_mixin.py:115} INFO - [2022-06-28 18:41:41,574] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:41:41,943] {logging_mixin.py:115} INFO - [2022-06-28 18:41:41,942] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/03_data to_dw_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/03_data to_dw_dag.py", line 25, in <module>
+    SELECT * FROM {BIGQUERY_DATASET}.{Configs.table_name}_external_table;"
+AttributeError: type object 'Configs' has no attribute 'table_name'
+[2022-06-28 18:41:41,943] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:41:41,957] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.386 seconds
+[2022-06-28 18:42:05,634] {processor.py:153} INFO - Started process (PID=813) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:42:05,634] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:42:05,635] {logging_mixin.py:115} INFO - [2022-06-28 18:42:05,634] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:42:06,059] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:42:06,073] {logging_mixin.py:115} INFO - [2022-06-28 18:42:06,073] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 18:42:06,090] {logging_mixin.py:115} INFO - [2022-06-28 18:42:06,090] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 18:42:06,103] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.470 seconds
+[2022-06-28 18:42:36,812] {processor.py:153} INFO - Started process (PID=948) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:42:36,813] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:42:36,814] {logging_mixin.py:115} INFO - [2022-06-28 18:42:36,813] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:42:37,156] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:42:37,170] {logging_mixin.py:115} INFO - [2022-06-28 18:42:37,169] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 18:42:37,182] {logging_mixin.py:115} INFO - [2022-06-28 18:42:37,182] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 18:42:37,192] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.382 seconds
+[2022-06-28 18:43:07,280] {processor.py:153} INFO - Started process (PID=1122) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:43:07,281] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:43:07,281] {logging_mixin.py:115} INFO - [2022-06-28 18:43:07,281] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:43:07,654] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:43:07,667] {logging_mixin.py:115} INFO - [2022-06-28 18:43:07,667] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 18:43:07,680] {logging_mixin.py:115} INFO - [2022-06-28 18:43:07,680] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 18:43:07,690] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.411 seconds
+[2022-06-28 18:43:38,538] {processor.py:153} INFO - Started process (PID=1293) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:43:38,540] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:43:38,541] {logging_mixin.py:115} INFO - [2022-06-28 18:43:38,541] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:43:38,889] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:43:38,902] {logging_mixin.py:115} INFO - [2022-06-28 18:43:38,901] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 18:43:38,913] {logging_mixin.py:115} INFO - [2022-06-28 18:43:38,913] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 18:43:38,922] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.389 seconds
+[2022-06-28 18:44:09,695] {processor.py:153} INFO - Started process (PID=1465) to work on /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:44:09,695] {processor.py:641} INFO - Processing file /opt/airflow/dags/03_data to_dw_dag.py for tasks to queue
+[2022-06-28 18:44:09,695] {logging_mixin.py:115} INFO - [2022-06-28 18:44:09,695] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:44:10,065] {processor.py:651} INFO - DAG(s) dict_keys(['data_to_dw_bq']) retrieved from /opt/airflow/dags/03_data to_dw_dag.py
+[2022-06-28 18:44:10,078] {logging_mixin.py:115} INFO - [2022-06-28 18:44:10,077] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-28 18:44:10,089] {logging_mixin.py:115} INFO - [2022-06-28 18:44:10,088] {dag.py:2931} INFO - Setting next_dagrun for data_to_dw_bq to None, run_after=None
+[2022-06-28 18:44:10,096] {processor.py:161} INFO - Processing /opt/airflow/dags/03_data to_dw_dag.py took 0.404 seconds

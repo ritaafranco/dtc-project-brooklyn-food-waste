@@ -1,0 +1,23 @@
+[2022-06-22 13:33:40,303] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_data_task manual__2022-06-22T13:33:36.237131+00:00 [queued]>
+[2022-06-22 13:33:40,311] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_data_task manual__2022-06-22T13:33:36.237131+00:00 [queued]>
+[2022-06-22 13:33:40,311] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 13:33:40,311] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-22 13:33:40,311] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 13:33:40,325] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): download_data_task> on 2022-06-22 13:33:36.237131+00:00
+[2022-06-22 13:33:40,330] {standard_task_runner.py:52} INFO - Started process 92 to run task
+[2022-06-22 13:33:40,332] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_data_task', 'manual__2022-06-22T13:33:36.237131+00:00', '--job-id', '153', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpqtii4_ns', '--error-file', '/tmp/tmpveivh9vi']
+[2022-06-22 13:33:40,333] {standard_task_runner.py:80} INFO - Job 153: Subtask download_data_task
+[2022-06-22 13:33:40,467] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_data_task manual__2022-06-22T13:33:36.237131+00:00 [running]> on host 1bd671e47a78
+[2022-06-22 13:33:40,512] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-22T13:33:36.237131+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-22T13:33:36.237131+00:00
+[2022-06-22 13:33:41,208] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-22 13:33:41,217] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=download_data_task, execution_date=20220622T133336, start_date=20220622T133340, end_date=20220622T133341
+[2022-06-22 13:33:41,267] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-22 13:33:41,409] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

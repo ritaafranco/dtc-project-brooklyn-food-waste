@@ -1,0 +1,22 @@
+[2022-06-27 10:18:56,870] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_to_gcs.trigger manual__2022-06-27T10:18:48.395603+00:00 [queued]>
+[2022-06-27 10:18:56,881] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_to_gcs.trigger manual__2022-06-27T10:18:48.395603+00:00 [queued]>
+[2022-06-27 10:18:56,882] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:18:56,882] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-27 10:18:56,882] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:18:56,899] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): trigger> on 2022-06-27 10:18:48.395603+00:00
+[2022-06-27 10:18:56,905] {standard_task_runner.py:52} INFO - Started process 179 to run task
+[2022-06-27 10:18:56,908] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_to_gcs', 'trigger', 'manual__2022-06-27T10:18:48.395603+00:00', '--job-id', '316', '--raw', '--subdir', 'DAGS_FOLDER/01_data_ingestion_to_gcs.py', '--cfg-path', '/tmp/tmpatqdi23l', '--error-file', '/tmp/tmptvhajwsm']
+[2022-06-27 10:18:56,909] {standard_task_runner.py:80} INFO - Job 316: Subtask trigger
+[2022-06-27 10:18:56,966] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_to_gcs.trigger manual__2022-06-27T10:18:48.395603+00:00 [running]> on host d7989a53f2a4
+[2022-06-27 10:18:57,048] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_to_gcs
+AIRFLOW_CTX_TASK_ID=trigger
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T10:18:48.395603+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T10:18:48.395603+00:00
+[2022-06-27 10:18:57,145] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_ingestion_to_gcs, task_id=trigger, execution_date=20220627T101848, start_date=20220627T101856, end_date=20220627T101857
+[2022-06-27 10:18:57,200] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-27 10:18:57,249] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

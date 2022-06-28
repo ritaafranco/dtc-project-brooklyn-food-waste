@@ -1,0 +1,50 @@
+[2022-06-23 17:41:04,543] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: process-food-waste-data.spark_job manual__2022-06-23T17:40:22.370258+00:00 [queued]>
+[2022-06-23 17:41:04,568] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: process-food-waste-data.spark_job manual__2022-06-23T17:40:22.370258+00:00 [queued]>
+[2022-06-23 17:41:04,568] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-23 17:41:04,569] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-23 17:41:04,569] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-23 17:41:04,597] {taskinstance.py:1377} INFO - Executing <Task(SparkSubmitOperator): spark_job> on 2022-06-23 17:40:22.370258+00:00
+[2022-06-23 17:41:04,608] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-23 17:41:04,607] {standard_task_runner.py:52} INFO - Started process 856 to run task
+[2022-06-23 17:41:04,614] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'process-food-waste-data', 'spark_job', 'manual__2022-06-23T17:40:22.370258+00:00', '--job-id', '291', '--raw', '--subdir', 'DAGS_FOLDER/02_data_process_dag.py', '--cfg-path', '/tmp/tmp_sluns9c', '--error-file', '/tmp/tmp_8nhx256']
+[2022-06-23 17:41:04,615] {standard_task_runner.py:80} INFO - Job 291: Subtask spark_job
+[2022-06-23 17:41:04,738] {task_command.py:370} INFO - Running <TaskInstance: process-food-waste-data.spark_job manual__2022-06-23T17:40:22.370258+00:00 [running]> on host d305947238c5
+[2022-06-23 17:41:04,978] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=process-food-waste-data
+AIRFLOW_CTX_TASK_ID=spark_job
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-23T17:40:22.370258+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-23T17:40:22.370258+00:00
+[2022-06-23 17:41:05,003] {spark_submit.py:204} INFO - Could not load connection string spark_project, defaulting to yarn
+[2022-06-23 17:41:05,006] {spark_submit.py:334} INFO - Spark-Submit cmd: spark-submit --master yarn --conf spark.master=local[*] --name process_data --verbose ./dags/scripts/process_food_waste.py
+[2022-06-23 17:41:07,711] {spark_submit.py:485} INFO - Using properties file: null
+[2022-06-23 17:41:07,820] {spark_submit.py:485} INFO - WARNING: An illegal reflective access operation has occurred
+[2022-06-23 17:41:07,820] {spark_submit.py:485} INFO - WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/opt/***/spark/spark-3.2.1-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+[2022-06-23 17:41:07,820] {spark_submit.py:485} INFO - WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+[2022-06-23 17:41:07,820] {spark_submit.py:485} INFO - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[2022-06-23 17:41:07,820] {spark_submit.py:485} INFO - WARNING: All illegal access operations will be denied in a future release
+[2022-06-23 17:41:07,866] {spark_submit.py:485} INFO - Exception in thread "main" org.apache.spark.SparkException: When running with master 'yarn' either HADOOP_CONF_DIR or YARN_CONF_DIR must be set in the environment.
+[2022-06-23 17:41:07,866] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmitArguments.error(SparkSubmitArguments.scala:634)
+[2022-06-23 17:41:07,866] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateSubmitArguments(SparkSubmitArguments.scala:274)
+[2022-06-23 17:41:07,867] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateArguments(SparkSubmitArguments.scala:234)
+[2022-06-23 17:41:07,867] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmitArguments.<init>(SparkSubmitArguments.scala:119)
+[2022-06-23 17:41:07,867] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2$$anon$3.<init>(SparkSubmit.scala:1026)
+[2022-06-23 17:41:07,867] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.parseArguments(SparkSubmit.scala:1026)
+[2022-06-23 17:41:07,867] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:85)
+[2022-06-23 17:41:07,867] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1043)
+[2022-06-23 17:41:07,867] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1052)
+[2022-06-23 17:41:07,867] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2022-06-23 17:41:07,904] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 157, in execute
+    self._hook.submit(self._application)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 417, in submit
+    f"Cannot execute: {self._mask_cmd(spark_submit_cmd)}. Error code is: {returncode}."
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master yarn --conf spark.master=local[*] --name process_data --verbose ./dags/scripts/process_food_waste.py. Error code is: 1.
+[2022-06-23 17:41:07,907] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=process-food-waste-data, task_id=spark_job, execution_date=20220623T174022, start_date=20220623T174104, end_date=20220623T174107
+[2022-06-23 17:41:07,920] {standard_task_runner.py:97} ERROR - Failed to execute job 291 for task spark_job (Cannot execute: spark-submit --master yarn --conf spark.master=local[*] --name process_data --verbose ./dags/scripts/process_food_waste.py. Error code is: 1.; 856)
+[2022-06-23 17:41:07,953] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-23 17:41:07,985] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

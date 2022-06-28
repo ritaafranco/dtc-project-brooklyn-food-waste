@@ -1,0 +1,51 @@
+[2022-06-28 16:04:18,606] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_to_dw_bq.bq_create_food_waste_partitioned_table_task manual__2022-06-28T16:04:04.878422+00:00 [queued]>
+[2022-06-28 16:04:18,614] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_to_dw_bq.bq_create_food_waste_partitioned_table_task manual__2022-06-28T16:04:04.878422+00:00 [queued]>
+[2022-06-28 16:04:18,615] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-28 16:04:18,615] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-28 16:04:18,615] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-28 16:04:18,627] {taskinstance.py:1377} INFO - Executing <Task(BigQueryInsertJobOperator): bq_create_food_waste_partitioned_table_task> on 2022-06-28 16:04:04.878422+00:00
+[2022-06-28 16:04:18,633] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 16:04:18,633] {standard_task_runner.py:52} INFO - Started process 333 to run task
+[2022-06-28 16:04:18,636] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_to_dw_bq', 'bq_create_food_waste_partitioned_table_task', 'manual__2022-06-28T16:04:04.878422+00:00', '--job-id', '553', '--raw', '--subdir', 'DAGS_FOLDER/03_data to_dw_dag.py', '--cfg-path', '/tmp/tmpsb6m9vyq', '--error-file', '/tmp/tmpnwysttzx']
+[2022-06-28 16:04:18,637] {standard_task_runner.py:80} INFO - Job 553: Subtask bq_create_food_waste_partitioned_table_task
+[2022-06-28 16:04:18,678] {task_command.py:370} INFO - Running <TaskInstance: data_to_dw_bq.bq_create_food_waste_partitioned_table_task manual__2022-06-28T16:04:04.878422+00:00 [running]> on host 7f4c2b65af9b
+[2022-06-28 16:04:18,737] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_to_dw_bq
+AIRFLOW_CTX_TASK_ID=bq_create_food_waste_partitioned_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-28T16:04:04.878422+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-28T16:04:04.878422+00:00
+[2022-06-28 16:04:18,739] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-06-28 16:04:18,739] {base.py:68} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2022-06-28 16:04:18,739] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:202: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-06-28 16:04:18,740] {bigquery.py:2148} INFO - Executing: {'query': {'query': 'CREATE OR REPLACE TABLE dtc_project_data_bq.food_waste         PARTITION BY date_collected         AS         SELECT * FROM dtc_project_data_bq.food_waste_external_table;', 'useLegacySql': False}}
+[2022-06-28 16:04:18,745] {bigquery.py:1538} INFO - Inserting job ***_data_to_dw_bq_bq_create_food_waste_partitioned_table_task_2022_06_28T16_04_04_878422_00_00_61e73edcc2d8bc767d6ae54f9b0d6b58
+[2022-06-28 16:04:18,893] {clientserver.py:505} INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2022-06-28 16:04:18,894] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 16:04:18,895] {java_gateway.py:1052} INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 507, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+[2022-06-28 16:04:18,897] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 16:04:21,906] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_to_dw_bq, task_id=bq_create_food_waste_partitioned_table_task, execution_date=20220628T160404, start_date=20220628T160418, end_date=20220628T160421
+[2022-06-28 16:04:21,976] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-28 16:04:22,021] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

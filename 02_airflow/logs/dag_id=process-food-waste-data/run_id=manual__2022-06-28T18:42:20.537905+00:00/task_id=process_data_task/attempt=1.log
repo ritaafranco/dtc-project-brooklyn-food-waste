@@ -1,0 +1,61 @@
+[2022-06-28 18:42:25,365] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-28T18:42:20.537905+00:00 [queued]>
+[2022-06-28 18:42:25,371] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-28T18:42:20.537905+00:00 [queued]>
+[2022-06-28 18:42:25,371] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-28 18:42:25,371] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-28 18:42:25,371] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-28 18:42:25,381] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): process_data_task> on 2022-06-28 18:42:20.537905+00:00
+[2022-06-28 18:42:25,385] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 18:42:25,385] {standard_task_runner.py:52} INFO - Started process 505 to run task
+[2022-06-28 18:42:25,388] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'process-food-waste-data', 'process_data_task', 'manual__2022-06-28T18:42:20.537905+00:00', '--job-id', '568', '--raw', '--subdir', 'DAGS_FOLDER/02_data_process_dag.py', '--cfg-path', '/tmp/tmpd9n27ktr', '--error-file', '/tmp/tmp47bfk03x']
+[2022-06-28 18:42:25,388] {standard_task_runner.py:80} INFO - Job 568: Subtask process_data_task
+[2022-06-28 18:42:25,422] {task_command.py:370} INFO - Running <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-28T18:42:20.537905+00:00 [running]> on host 9f709a2aaee5
+[2022-06-28 18:42:25,473] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=process-food-waste-data
+AIRFLOW_CTX_TASK_ID=process_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-28T18:42:20.537905+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-28T18:42:20.537905+00:00
+[2022-06-28 18:42:25,482] {clientserver.py:505} INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2022-06-28 18:42:25,482] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 18:42:25,482] {java_gateway.py:1052} INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 507, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+[2022-06-28 18:42:25,484] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 18:42:32,065] {logging_mixin.py:115} INFO - There were  8  records eliminated by ensuring date format.
+[2022-06-28 18:42:32,353] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/process_food_waste_data.py", line 89, in process_food_waste_data
+    df.write.parquet(f"gs://{BUCKET}/{processed_folder}/{bq_food_waste_table_name}")
+  File "/opt/airflow/spark/spark-3.2.1-bin-hadoop3.2/python/pyspark/sql/readwriter.py", line 885, in parquet
+    self._jwrite.parquet(path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    answer, self.gateway_client, self.target_id, self.name)
+  File "/opt/airflow/spark/spark-3.2.1-bin-hadoop3.2/python/pyspark/sql/utils.py", line 117, in deco
+    raise converted from None
+pyspark.sql.utils.AnalysisException: path gs://dtc-project-data_dtc-project-ritaafranco/processed/food_waste already exists.
+[2022-06-28 18:42:32,367] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=process-food-waste-data, task_id=process_data_task, execution_date=20220628T184220, start_date=20220628T184225, end_date=20220628T184232
+[2022-06-28 18:42:32,381] {standard_task_runner.py:97} ERROR - Failed to execute job 568 for task process_data_task (path gs://dtc-project-data_dtc-project-ritaafranco/processed/food_waste already exists.; 505)
+[2022-06-28 18:42:32,427] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-28 18:42:32,463] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

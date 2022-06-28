@@ -1,0 +1,41 @@
+[2022-06-27 16:49:32,036] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-27T16:49:27.789697+00:00 [queued]>
+[2022-06-27 16:49:32,042] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-27T16:49:27.789697+00:00 [queued]>
+[2022-06-27 16:49:32,042] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 16:49:32,042] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-27 16:49:32,042] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 16:49:32,052] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): process_data_task> on 2022-06-27 16:49:27.789697+00:00
+[2022-06-27 16:49:32,058] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-27 16:49:32,058] {standard_task_runner.py:52} INFO - Started process 758 to run task
+[2022-06-27 16:49:32,061] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'process-food-waste-data', 'process_data_task', 'manual__2022-06-27T16:49:27.789697+00:00', '--job-id', '450', '--raw', '--subdir', 'DAGS_FOLDER/02_data_process_dag.py', '--cfg-path', '/tmp/tmphfu7mp5m', '--error-file', '/tmp/tmpgpepwqhy']
+[2022-06-27 16:49:32,061] {standard_task_runner.py:80} INFO - Job 450: Subtask process_data_task
+[2022-06-27 16:49:32,096] {task_command.py:370} INFO - Running <TaskInstance: process-food-waste-data.process_data_task manual__2022-06-27T16:49:27.789697+00:00 [running]> on host 82419db15be4
+[2022-06-27 16:49:32,144] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=process-food-waste-data
+AIRFLOW_CTX_TASK_ID=process_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T16:49:27.789697+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T16:49:27.789697+00:00
+[2022-06-27 16:49:32,144] {logging_mixin.py:115} INFO - ENTERED FUNCTION
+[2022-06-27 16:49:39,963] {logging_mixin.py:115} INFO - There were  8  records eliminated by ensuring date format.
+[2022-06-27 16:49:40,126] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/process_food_waste_data.py", line 98, in process_food_waste_data
+    df.write.parquet(f"gs://{BUCKET}/{processed_folder}/{parquet_file}").schema(food_waste_schema).option('header', True)
+  File "/opt/airflow/spark/spark-3.2.1-bin-hadoop3.2/python/pyspark/sql/readwriter.py", line 885, in parquet
+    self._jwrite.parquet(path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    answer, self.gateway_client, self.target_id, self.name)
+  File "/opt/airflow/spark/spark-3.2.1-bin-hadoop3.2/python/pyspark/sql/utils.py", line 117, in deco
+    raise converted from None
+pyspark.sql.utils.AnalysisException: path gs://dtc-project-data_dtc-project-ritaafranco/processed/brooklyn.parquet already exists.
+[2022-06-27 16:49:40,137] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=process-food-waste-data, task_id=process_data_task, execution_date=20220627T164927, start_date=20220627T164932, end_date=20220627T164940
+[2022-06-27 16:49:40,154] {standard_task_runner.py:97} ERROR - Failed to execute job 450 for task process_data_task (path gs://dtc-project-data_dtc-project-ritaafranco/processed/brooklyn.parquet already exists.; 758)
+[2022-06-27 16:49:40,181] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-27 16:49:40,214] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

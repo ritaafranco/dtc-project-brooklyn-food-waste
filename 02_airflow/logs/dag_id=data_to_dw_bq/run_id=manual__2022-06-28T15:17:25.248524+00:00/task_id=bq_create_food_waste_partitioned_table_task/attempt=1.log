@@ -1,0 +1,79 @@
+[2022-06-28 15:22:42,217] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_to_dw_bq.bq_create_food_waste_partitioned_table_task manual__2022-06-28T15:17:25.248524+00:00 [queued]>
+[2022-06-28 15:22:42,225] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_to_dw_bq.bq_create_food_waste_partitioned_table_task manual__2022-06-28T15:17:25.248524+00:00 [queued]>
+[2022-06-28 15:22:42,225] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-28 15:22:42,225] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-28 15:22:42,225] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-28 15:22:42,236] {taskinstance.py:1377} INFO - Executing <Task(BigQueryInsertJobOperator): bq_create_food_waste_partitioned_table_task> on 2022-06-28 15:17:25.248524+00:00
+[2022-06-28 15:22:42,243] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 15:22:42,243] {standard_task_runner.py:52} INFO - Started process 314 to run task
+[2022-06-28 15:22:42,245] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_to_dw_bq', 'bq_create_food_waste_partitioned_table_task', 'manual__2022-06-28T15:17:25.248524+00:00', '--job-id', '544', '--raw', '--subdir', 'DAGS_FOLDER/03_data to_dw_dag.py', '--cfg-path', '/tmp/tmpz_rg0hgs', '--error-file', '/tmp/tmplydp8r0t']
+[2022-06-28 15:22:42,246] {standard_task_runner.py:80} INFO - Job 544: Subtask bq_create_food_waste_partitioned_table_task
+[2022-06-28 15:22:42,282] {task_command.py:370} INFO - Running <TaskInstance: data_to_dw_bq.bq_create_food_waste_partitioned_table_task manual__2022-06-28T15:17:25.248524+00:00 [running]> on host 7c6db1b27447
+[2022-06-28 15:22:42,340] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_to_dw_bq
+AIRFLOW_CTX_TASK_ID=bq_create_food_waste_partitioned_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-28T15:17:25.248524+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-28T15:17:25.248524+00:00
+[2022-06-28 15:22:42,341] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-06-28 15:22:42,341] {base.py:68} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2022-06-28 15:22:42,342] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:202: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-06-28 15:22:42,342] {bigquery.py:2148} INFO - Executing: {'query': {'query': "CREATE OR REPLACE TABLE dtc_project_data_bq.food_waste         PARTITION BY DATE('date_collected')         AS         SELECT * FROM dtc_project_data_bq.food_waste_external_table;", 'useLegacySql': False}}
+[2022-06-28 15:22:42,347] {bigquery.py:1538} INFO - Inserting job ***_data_to_dw_bq_bq_create_food_waste_partitioned_table_task_2022_06_28T15_17_25_248524_00_00_57fe43307100aa732f808ff4eb202557
+[2022-06-28 15:22:42,935] {clientserver.py:505} INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2022-06-28 15:22:42,935] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 15:22:42,935] {java_gateway.py:1052} INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.7/site-packages/py4j/clientserver.py", line 507, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+[2022-06-28 15:22:42,937] {clientserver.py:543} INFO - Closing down clientserver connection
+[2022-06-28 15:22:43,914] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 2149, in execute
+    job = self._submit_job(hook, job_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 2114, in _submit_job
+    retry=self.result_retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 439, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1544, in insert_job
+    job.result(timeout=timeout, retry=retry)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/job/query.py", line 1499, in result
+    do_get_result()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/job/query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/job/base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/future/polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Could not cast literal "date_collected" to type TIMESTAMP at [1:82]
+
+Location: europe-west6
+Job ID: airflow_data_to_dw_bq_bq_create_food_waste_partitioned_table_task_2022_06_28T15_17_25_248524_00_00_57fe43307100aa732f808ff4eb202557
+
+[2022-06-28 15:22:43,921] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_to_dw_bq, task_id=bq_create_food_waste_partitioned_table_task, execution_date=20220628T151725, start_date=20220628T152242, end_date=20220628T152243
+[2022-06-28 15:22:43,935] {standard_task_runner.py:97} ERROR - Failed to execute job 544 for task bq_create_food_waste_partitioned_table_task (400 Could not cast literal "date_collected" to type TIMESTAMP at [1:82]
+
+Location: europe-west6
+Job ID: airflow_data_to_dw_bq_bq_create_food_waste_partitioned_table_task_2022_06_28T15_17_25_248524_00_00_57fe43307100aa732f808ff4eb202557
+; 314)
+[2022-06-28 15:22:43,943] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-28 15:22:43,970] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

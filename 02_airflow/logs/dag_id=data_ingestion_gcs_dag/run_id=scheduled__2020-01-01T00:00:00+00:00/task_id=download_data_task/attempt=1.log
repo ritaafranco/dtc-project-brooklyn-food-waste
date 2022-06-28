@@ -1,0 +1,46 @@
+[2022-06-22 11:23:36,612] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_data_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-06-22 11:23:36,617] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_data_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-06-22 11:23:36,617] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 11:23:36,617] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-22 11:23:36,617] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 11:23:36,627] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): download_data_task> on 2020-01-01 00:00:00+00:00
+[2022-06-22 11:23:36,632] {standard_task_runner.py:52} INFO - Started process 107 to run task
+[2022-06-22 11:23:36,634] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_data_task', 'scheduled__2020-01-01T00:00:00+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpi4p891e2', '--error-file', '/tmp/tmpw84cmpp4']
+[2022-06-22 11:23:36,634] {standard_task_runner.py:80} INFO - Job 108: Subtask download_data_task
+[2022-06-22 11:23:36,671] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_data_task scheduled__2020-01-01T00:00:00+00:00 [running]> on host 69b874fb3dd4
+[2022-06-22 11:23:36,724] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T00:00:00+00:00
+[2022-06-22 11:23:37,358] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-22 11:23:37,374] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=download_data_task, execution_date=20200101T000000, start_date=20220622T112336, end_date=20220622T112337
+[2022-06-22 11:23:37,407] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-22 11:23:37,451] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-22 11:55:42,652] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_data_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-06-22 11:55:42,658] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_data_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-06-22 11:55:42,658] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 11:55:42,658] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-22 11:55:42,658] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 11:55:42,672] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): download_data_task> on 2020-01-01 00:00:00+00:00
+[2022-06-22 11:55:42,677] {standard_task_runner.py:52} INFO - Started process 170 to run task
+[2022-06-22 11:55:42,679] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_data_task', 'scheduled__2020-01-01T00:00:00+00:00', '--job-id', '141', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpdhg6kg_p', '--error-file', '/tmp/tmp1lrrx8du']
+[2022-06-22 11:55:42,680] {standard_task_runner.py:80} INFO - Job 141: Subtask download_data_task
+[2022-06-22 11:55:42,723] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_data_task scheduled__2020-01-01T00:00:00+00:00 [running]> on host 36b383b8f034
+[2022-06-22 11:55:42,793] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T00:00:00+00:00
+[2022-06-22 11:55:43,659] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-22 11:55:43,668] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=download_data_task, execution_date=20200101T000000, start_date=20220622T115542, end_date=20220622T115543
+[2022-06-22 11:55:43,694] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-22 11:55:43,726] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

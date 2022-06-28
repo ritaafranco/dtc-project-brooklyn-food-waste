@@ -1,0 +1,135 @@
+[2022-06-22 11:23:42,588] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-06-22 11:23:42,597] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-06-22 11:23:42,598] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 11:23:42,598] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-22 11:23:42,598] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 11:23:42,613] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2020-01-01 00:00:00+00:00
+[2022-06-22 11:23:42,619] {standard_task_runner.py:52} INFO - Started process 243 to run task
+[2022-06-22 11:23:42,622] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'local_to_gcs_task', 'scheduled__2020-01-01T00:00:00+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpke15mmkw', '--error-file', '/tmp/tmpwwjk2n1h']
+[2022-06-22 11:23:42,623] {standard_task_runner.py:80} INFO - Job 114: Subtask local_to_gcs_task
+[2022-06-22 11:23:42,674] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2020-01-01T00:00:00+00:00 [running]> on host 69b874fb3dd4
+[2022-06-22 11:23:42,754] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T00:00:00+00:00
+[2022-06-22 11:23:42,756] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dags.py", line 60, in upload_to_gcs
+    client = storage.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/client.py", line 128, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 546, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 539, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 219, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 118, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /.google/credentials/google_credentials.json was not found.
+[2022-06-22 11:23:42,765] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_ingestion_gcs_dag, task_id=local_to_gcs_task, execution_date=20200101T000000, start_date=20220622T112342, end_date=20220622T112342
+[2022-06-22 11:23:42,778] {standard_task_runner.py:97} ERROR - Failed to execute job 114 for task local_to_gcs_task (File /.google/credentials/google_credentials.json was not found.; 243)
+[2022-06-22 11:23:42,794] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-22 11:23:42,832] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-22 11:55:48,137] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-06-22 11:55:48,143] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-06-22 11:55:48,143] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 11:55:48,143] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-22 11:55:48,143] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 11:55:48,155] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2020-01-01 00:00:00+00:00
+[2022-06-22 11:55:48,162] {standard_task_runner.py:52} INFO - Started process 295 to run task
+[2022-06-22 11:55:48,164] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'local_to_gcs_task', 'scheduled__2020-01-01T00:00:00+00:00', '--job-id', '148', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpiq58he3y', '--error-file', '/tmp/tmpgw36r00z']
+[2022-06-22 11:55:48,164] {standard_task_runner.py:80} INFO - Job 148: Subtask local_to_gcs_task
+[2022-06-22 11:55:48,197] {task_command.py:370} INFO - Running <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task scheduled__2020-01-01T00:00:00+00:00 [running]> on host 36b383b8f034
+[2022-06-22 11:55:48,248] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T00:00:00+00:00
+[2022-06-22 11:55:48,557] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2594, in upload_from_file
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2396, in _do_upload
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 1917, in _do_multipart_upload
+    transport, data, object_metadata, content_type, timeout=timeout
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/requests/upload.py", line 154, in transmit
+    retriable_request, self._get_status_code, self._retry_strategy
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/requests/_request_helpers.py", line 148, in wait_and_retry
+    response = func()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/requests/upload.py", line 149, in retriable_request
+    self._process_response(result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/_upload.py", line 114, in _process_response
+    _helpers.require_status_code(response, (http.client.OK,), self._get_status_code)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/_helpers.py", line 110, in require_status_code
+    *status_codes
+google.resumable_media.common.InvalidResponse: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dags.py", line 64, in upload_to_gcs
+    blob.upload_from_filename(local_file)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2735, in upload_from_filename
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2598, in upload_from_file
+    _raise_from_invalid_response(exc)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 4470, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.Forbidden: 403 POST https://storage.googleapis.com/upload/storage/v1/b/dtc-project-data_dtc-project-ritaafranco/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "dtc-de-user@dtc-data-engineering-zoomcamp.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object.",
+    "errors": [
+      {
+        "message": "dtc-de-user@dtc-data-engineering-zoomcamp.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[2022-06-22 11:55:48,574] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_ingestion_gcs_dag, task_id=local_to_gcs_task, execution_date=20200101T000000, start_date=20220622T115548, end_date=20220622T115548
+[2022-06-22 11:55:48,590] {standard_task_runner.py:97} ERROR - Failed to execute job 148 for task local_to_gcs_task (403 POST https://storage.googleapis.com/upload/storage/v1/b/dtc-project-data_dtc-project-ritaafranco/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "dtc-de-user@dtc-data-engineering-zoomcamp.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object.",
+    "errors": [
+      {
+        "message": "dtc-de-user@dtc-data-engineering-zoomcamp.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>); 295)
+[2022-06-22 11:55:48,617] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-22 11:55:48,647] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
