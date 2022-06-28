@@ -13,7 +13,10 @@ The dataset can be found [here](https://www.kaggle.com/datasets/ursulakaczmarek/
 
 
 # Dashboard
-
-[here](https://datastudio.google.com/reporting/c01d8ee8-3423-465d-b8dc-c3ed280cb9d2)
+The dashboard can be found [here](https://datastudio.google.com/reporting/c01d8ee8-3423-465d-b8dc-c3ed280cb9d2). In case the data is not showing it means the free credits in my Google Cloud account are over, then please consult image bellow.
+This dashboard allows some conclusions on the data such as:
+* The most wasted food product are yogurts.
+* The average price of wasted products is approximatly $5.57.
+* The majority of produtcs is collected on expiration date day, however some are wasted before that date.
 
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Dashboard.png)
