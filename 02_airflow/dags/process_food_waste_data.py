@@ -84,7 +84,7 @@ def process_food_waste_data(
         df = df.withColumn(col, F.initcap(F.col(col)))
 
     # new metric
-    df = df.withColumn('no_days_untill_expire', F.col('label_date'), F.datediff(F.col('date_collected')))
+    df = df.withColumn('no_days_untill_expire', F.datediff(F.col('label_date'), F.col('date_collected')))
         
     # save processed df
     df.write.parquet(f"gs://{BUCKET}/{processed_folder}/{bq_food_waste_table_name}")
