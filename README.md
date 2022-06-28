@@ -18,5 +18,6 @@ This dashboard allows some conclusions on the data such as:
 * The most wasted food product are yogurts.
 * The average price of wasted products is approximatly $5.57.
 * The majority of produtcs is collected on expiration date day, however some are wasted before that date.
+* Around 60% of wasted food products are perishable.
 
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Dashboard.png)
