@@ -26,6 +26,7 @@ Techonologies used for the project:
 * Workflow orchestration: Airflow
 * Data Wareshouse: BigQuery
 * Batch processing: Spark
+* Containerization: Docker
 
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Architecture.png)
 
@@ -40,8 +41,23 @@ This dashboard allows some conclusions on the data such as:
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Dashboard.png)
 
 # Recreating the project
+For recreating this project please follow the instructions bellow.
+
 ## Kaggle Credentials
+The dataset used for this project is from Kaggle, so in order to download it we need to use Kaggle API and pass some credentials as env variables to docker.
+
+1. Create a Kaggle account [here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2Fritamafranco%2Faccount).
+2. Log in to your account, navigate to account settings and create a **new API Token**:
+
+3. Copy the username and key to the [Docker Compose](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/02_airflow/docker-compose.yaml) file (lines 72 and 73) and uncomment them.
+```
+  #KAGGLE_USERNAME: <paste here>
+  #KAGGLE_KEY: <paste here>
+```
+Note: a better way to do this is being investigated, for some reason the API was not being able to read the file when the file was copied to the container to the location `~/.kaggle/kaggle.json`.
+
 ## Google Cloud Account
+
 ## Terraform
 ## Airflow
 
