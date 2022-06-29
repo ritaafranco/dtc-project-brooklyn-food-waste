@@ -94,7 +94,7 @@ docker compose build
 docker compose up -d
 ```
 
-After the containers are up navigate to [localhost:8080](localhost:8080) and log in to airflow. You should be able to see 3 DAGs that are paused.
+After the containers are up navigate to [localhost:8080](http://localhost:8080) and log in to airflow. You should be able to see 3 DAGs that are paused.
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Airflow%20DAGs.png)
 Please enable all 3. Wait for them to start, just refresh the page. **Do not trigger them manually**. DAGs will be triggered automatically once the previous one is finnished.
 
