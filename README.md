@@ -8,8 +8,8 @@ A huge thanks to DataTalks Club Team for creating this great [DE Zoompcamp](http
 2. [Dataset](#dataset)
 3. [Architecture](#architecture)
 4. [Dashboard](#dashboard)
-5. [Recreating the project](#recreating the project)
-6. [Future Development](#future development)
+5. [Recreating the project](#recreating-the-project)
+6. [Future Development](#future-development)
 
 # Goal
 This project aims to create a data pipeline that processes data that will help answer the following questions:
