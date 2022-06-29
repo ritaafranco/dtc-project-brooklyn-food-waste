@@ -57,7 +57,28 @@ The dataset used for this project is from Kaggle, so in order to download it we 
 Note: a better way to do this is being investigated, for some reason the API was not being able to read the file when the file was copied to the container to the location `~/.kaggle/kaggle.json`.
 
 ## Google Cloud Account
+For this project a free GCP account is all you need.
 
+1. Create an account with your Google email ID 
+2. Setup your first [project](https://console.cloud.google.com/) if you haven't already
+    * eg. "dtc-project-ritaafranco"
+3. Copy the project id to the [Docker Compose](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/02_airflow/docker-compose.yaml) file (lines 70).
+```
+GCP_PROJECT_ID: '<your-gcp-project-id>'
+```
+3. Setup [service account & authentication](https://cloud.google.com/docs/authentication/getting-started) for this project
+    * Grant `Viewer` role to begin with.
+    * Download service-account-keys (.json) for auth. And save it under `~/.google/credentials/google_credentials.json`
+4. [IAM Roles](https://cloud.google.com/storage/docs/access-control/iam-roles) for Service account:
+   * Go to the *IAM* section of *IAM & Admin* https://console.cloud.google.com/iam-admin/iam
+   * Click the *Edit principal* icon for your service account.
+   * Add these roles in addition to *Viewer* : **Storage Admin** + **Storage Object Admin** + **BigQuery Admin**
+   
+5. Enable these APIs for your project:
+   * https://console.cloud.google.com/apis/library/iam.googleapis.com
+   * https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
+   * https://console.cloud.google.com/apis/library/datastudio.googleapis.com
+   
 ## Terraform
 Terraform is being used to create the insfrastructure inside GCP project. For that run the following commands on your terminal:
 1. Go to terraform folder:
@@ -68,16 +89,17 @@ cd ~/dtc-project-brooklyn-food-waste/01_terraform
 ```
 terraform init
 ```
-4. Run terraform plan to check if all changes are acording to plan.
+3. Run terraform plan to check if all changes are acording to plan.
 ```
-terraform plan
+terraform plan -var="project=<your-gcp-project-id>"
 ```
-6. Run terraform apply to enforce the changes.
+4. Run terraform apply to enforce the changes.
 ```
-terraform apply
+terraform apply -var="project=<your-gcp-project-id>"
 ```
-
 Wait for the command to complete and then move on to Airflow!
+
+After the work is done, you can use `terraform destroy` to delete the services created and avoid costs on any running services.
 
 ## Airflow
 Airflow is orchestraing the whole data pipeline: data ingestion to data lake, data transformation and data storage in the data warehouse. To run Airflow you need `docker compose` and run the following commands on your terminal:
@@ -105,9 +127,8 @@ Please enable all 3. Wait for them to start, just refresh the page. **Do not tri
 Once the pipeline is completed you can create a Data Studio report to check the data.
 
 ## Data Studio
-
-
+You can now create a new report and add the recently created Big Query tables as your data source.
 
 # Future Development
 * Adjust data schema to create an optimized data model for the dashboard.
-* Replace Kaggle credentials method. Currently these credentials are wrriten as environment variables in the Docker Compose file, these sould be passed in a more secure way.
+* Replace Kaggle credentials method. Currently these credentials are wrriten as environment variables in the Docker Compose file, these sould be passed in a more secure way. For example following [this alternative](https://www.kaggle.com/general/51898)
