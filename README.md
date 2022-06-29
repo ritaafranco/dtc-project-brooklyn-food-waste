@@ -44,11 +44,11 @@ This dashboard allows some conclusions on the data such as:
 For recreating this project please follow the instructions bellow.
 
 ## Kaggle Credentials
-The dataset used for this project is from Kaggle, so in order to download it we need to use Kaggle API and pass some credentials as env variables to docker.
+The dataset used for this project is from Kaggle, so in order to download it we need to use Kaggle API and pass env variables to docker.
 
 1. Create a Kaggle account [here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2Fritamafranco%2Faccount).
 2. Log in to your account, navigate to account settings and create a **new API Token**:
-
+![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Kaggle%20API.png)
 3. Copy the username and key to the [Docker Compose](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/02_airflow/docker-compose.yaml) file (lines 72 and 73) and uncomment them.
 ```
   #KAGGLE_USERNAME: <paste here>
@@ -59,7 +59,54 @@ Note: a better way to do this is being investigated, for some reason the API was
 ## Google Cloud Account
 
 ## Terraform
+Terraform is being used to create the insfrastructure inside GCP project. For that run the following commands on your terminal:
+1. Go to terraform folder:
+```
+cd ~/dtc-project-brooklyn-food-waste/01_terraform
+```
+2. Init terraform
+```
+terraform init
+```
+4. Run terraform plan to check if all changes are acording to plan.
+```
+terraform plan
+```
+6. Run terraform apply to enforce the changes.
+```
+terraform apply
+```
+
+Wait for the command to complete and then move on to Airflow!
+
 ## Airflow
+Airflow is orchestraing the whole data pipeline: data ingestion to data lake, data transformation and data storage in the data warehouse. To run Airflow you need `docker compose` and run the following commands on your terminal:
+1. Navigate to airflow folder:
+```
+cd ~/dtc-project-brooklyn-food-waste/02_airfow
+```
+2. Build de image:
+```
+docker compose build
+```
+3. Initiate airflow
+```
+docker compose up -d
+```
+
+After the containers are up navigate to [localhost:8080](localhost:8080) and log in to airflow. You should be able to see 3 DAGs that are paused.
+![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Airflow%20DAGs.png)
+Please enable all 3. Wait for them to start, just refresh the page. **Do not trigger them manually**. DAGs will be triggered automatically once the previous one is finnished.
+
+* `data_ingestion_to_gcs`: first DAG, fetches data from kaggle and stores it in the Data Lake (GCS bucket). Triggers `process-food-waste-data` DAG.
+* `process-food-waste-data`: second DAG, processed all data using Spark, and stores it in the bucket. Triggers `data_to_dw_bq` DAG.
+* `data_to_dw_bq`: final DAG, fetches the processed data from the Data Lake and creates the Big Query (data warehouse) tables.
+
+Once the pipeline is completed you can create a Data Studio report to check the data.
+
+## Data Studio
+
+
 
 # Future Development
 * Adjust data schema to create an optimized data model for the dashboard.
