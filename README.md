@@ -20,6 +20,7 @@ This project aims to create a data pipeline that processes data that will help a
 The dataset can be found [here](https://www.kaggle.com/datasets/ursulakaczmarek/brooklyn-food-waste), it contains data used to research the relationship between food waste and the date labels found on those wasted food items. The data was collected by picking up items directly from retailer trash piles at random in the Downtown Brooklyn neighborhood in New York City.
 
 # Architecture
+![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Architecture.png)
 
 # Dashboard
 The dashboard can be found [here](https://datastudio.google.com/reporting/c01d8ee8-3423-465d-b8dc-c3ed280cb9d2). In case the data is not showing it means the free credits in my Google Cloud account are over, then please consult image bellow.
