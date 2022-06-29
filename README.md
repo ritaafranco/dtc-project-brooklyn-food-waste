@@ -1,7 +1,15 @@
 # DTC Project: brooklyn food waste
-This repo contains my code for DataTalkClub's DE Zoomcamp Project. 
+This repo contains my code for DataTalkClub's DE Zoomcamp Project (project assignment [here](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_7_project)). 
 
 A huge thanks to DataTalks Club Team for creating this great [DE Zoompcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp)!!
+
+# Table of Contents
+1. [Goal](#goal)
+2. [Dataset](#dataset)
+3. [Architecture](#architecture)
+4. [Dashboard](#dashboard)
+5. [Recreating the project](#recreating the project)
+6. [Future Development](#future development)
 
 # Goal
 This project aims to create a data pipeline that processes data that will help answer the following questions:
@@ -11,6 +19,7 @@ This project aims to create a data pipeline that processes data that will help a
 # Dataset
 The dataset can be found [here](https://www.kaggle.com/datasets/ursulakaczmarek/brooklyn-food-waste), it contains data used to research the relationship between food waste and the date labels found on those wasted food items. The data was collected by picking up items directly from retailer trash piles at random in the Downtown Brooklyn neighborhood in New York City.
 
+# Architecture
 
 # Dashboard
 The dashboard can be found [here](https://datastudio.google.com/reporting/c01d8ee8-3423-465d-b8dc-c3ed280cb9d2). In case the data is not showing it means the free credits in my Google Cloud account are over, then please consult image bellow.
@@ -21,3 +30,12 @@ This dashboard allows some conclusions on the data such as:
 * Around 60% of wasted food products are perishable.
 
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Dashboard.png)
+
+# Recreating the project
+## Kaggle Credentials
+## Google Cloud Account
+## Terraform
+## Airflow
+
+# Future Development
+* Adjust data schema to create an optimized data model for the dashboard.
