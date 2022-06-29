@@ -130,5 +130,6 @@ Once the pipeline is completed you can create a Data Studio report to check the 
 You can now create a new report and add the recently created Big Query tables as your data source.
 
 # Future Development
+* Add complementary data to make the analysis more interesting, eg: CO2 emissions produced by this food waste.
 * Adjust data schema to create an optimized data model for the dashboard.
 * Replace Kaggle credentials method. Currently these credentials are wrriten as environment variables in the Docker Compose file, these sould be passed in a more secure way. For example following [this alternative](https://www.kaggle.com/general/51898)
