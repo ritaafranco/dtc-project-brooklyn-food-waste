@@ -69,8 +69,8 @@ x-airflow-common:
     # TODO: Please change GCP_PROJECT_ID & GCP_GCS_BUCKET, as per your config
     GCP_PROJECT_ID: 'dtc-project-ritaafranco'
     GCP_GCS_BUCKET: 'dtc-project-data_dtc-project-ritaafranco'
-    KAGGLE_USERNAME: 'ritamafranco'
-    KAGGLE_KEY: '195b22ef296cc8095e9c93fe25731829'
+    #KAGGLE_USERNAME: '***'
+    #KAGGLE_KEY: '***'
 
   volumes:
     - ./dags:/opt/airflow/dags
