@@ -66,11 +66,11 @@ x-airflow-common:
     GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_credentials.json
     AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
 
-    # TODO: Please change GCP_PROJECT_ID & GCP_GCS_BUCKET, as per your config
+    # TODO: Please change GCP_PROJECT_ID, GCP_GCS_BUCKET, KAGGLE_USERNAME & KAGGLE_KEY as per your config
     GCP_PROJECT_ID: 'dtc-project-ritaafranco'
-    GCP_GCS_BUCKET: 'dtc-project-data_dtc-project-ritaafranco'
-    #KAGGLE_USERNAME: '***'
-    #KAGGLE_KEY: '***'
+    GCP_GCS_BUCKET: 'dtc-project-data_${GCP_PROJECT_ID}'
+    #KAGGLE_USERNAME: '<paste-here>'
+    #KAGGLE_KEY: '<paste-here>'
 
   volumes:
     - ./dags:/opt/airflow/dags
