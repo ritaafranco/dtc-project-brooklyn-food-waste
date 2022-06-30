@@ -111,7 +111,7 @@ with DAG(
     
     rm_task = BashOperator(
             task_id="rm_task",
-            bash_command=f"rm {path_to_local_home}/{Configs.dataset_file} {path_to_local_home}/{Configs.zipfile_name}"
+            bash_command=f"rm {path_to_local_home}/{Configs.dataset_file} {path_to_local_home}/{Configs.zipfile_name} {path_to_local_home}/{Configs.parquet_file}"
         )
 
     download_data_task >> unzip_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> trigger_process >> rm_task

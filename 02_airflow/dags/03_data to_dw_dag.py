@@ -64,5 +64,3 @@ with DAG(
     
 
     bigquery_external_table_task >> bq_create_partitioned_table_job 
-
-    

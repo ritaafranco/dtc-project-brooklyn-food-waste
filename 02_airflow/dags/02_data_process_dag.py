@@ -55,5 +55,3 @@ with DAG(
     
 
     process_data_task >> trigger_bq
-
-    
