@@ -49,12 +49,7 @@ The dataset used for this project is from Kaggle, so in order to download it we 
 1. Create a Kaggle account [here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2Fritamafranco%2Faccount).
 2. Log in to your account, navigate to account settings and create a **new API Token**:
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Kaggle%20API.png)
-3. Copy the username and key to the [Docker Compose](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/02_airflow/docker-compose.yaml) file (lines 72 and 73) and uncomment them.
-```
-  #KAGGLE_USERNAME: <paste here>
-  #KAGGLE_KEY: <paste here>
-```
-Note: a better way to do this is being investigated, for some reason the API was not being able to read the file when the file was copied to the container to the location `~/.kaggle/kaggle.json`.
+3. A json file called `kaggle.json` conatining your credentials will be downloaded. Please save it under `~/.kaggle/kaggle.json`.
 
 ## Google Cloud Account
 For this project a free GCP account is all you need.
@@ -133,4 +128,3 @@ You can now create a new report and add the recently created Big Query tables as
 # Future Development
 * Add complementary data to make the analysis more interesting, eg: CO2 emissions produced by this food waste.
 * Adjust data schema to create an optimized data model for the dashboard.
-* Replace Kaggle credentials method. Currently these credentials are wrriten as environment variables in the Docker Compose file, these sould be passed in a more secure way. For example following [this alternative](https://www.kaggle.com/general/51898)
