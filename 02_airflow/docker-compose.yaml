@@ -68,7 +68,7 @@ x-airflow-common:
 
     # TODO: Please change GCP_PROJECT_ID, GCP_GCS_BUCKET, KAGGLE_USERNAME & KAGGLE_KEY as per your config
     GCP_PROJECT_ID: 'dtc-project-ritaafranco'
-    GCP_GCS_BUCKET: 'dtc-project-data_${GCP_PROJECT_ID}'
+    GCP_GCS_BUCKET: 'dtc-project-data_dtc-project-ritaafranco'
     #KAGGLE_USERNAME: '<paste-here>'
     #KAGGLE_KEY: '<paste-here>'
 
