@@ -199,7 +199,7 @@ services:
           exit 1
         fi
         if [[ -z "${AIRFLOW_UID}" ]]; then
-          echo
+          echoe
           echo -e "\033[1;33mWARNING!!!: AIRFLOW_UID not set!\e[0m"
           echo "If you are on Linux, you SHOULD follow the instructions below to set "
           echo "AIRFLOW_UID environment variable, otherwise files will be owned by root."
