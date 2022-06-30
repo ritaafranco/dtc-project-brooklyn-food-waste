@@ -49,7 +49,7 @@ The dataset used for this project is from Kaggle, so in order to download it we 
 1. Create a Kaggle account [here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2Fritamafranco%2Faccount).
 2. Log in to your account, navigate to account settings and create a **new API Token**:
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Kaggle%20API.png)
-3. A json file called `kaggle.json` conatining your credentials will be downloaded. Please save it under `~/.kaggle/kaggle.json`.
+3. A json file called `kaggle.json` containing your credentials will be downloaded. Please save it under `~/.kaggle/kaggle.json`.
 
 ## Google Cloud Account
 For this project a free GCP account is all you need.
@@ -114,7 +114,7 @@ docker compose up -d
 
 After the containers are up navigate to [localhost:8080](http://localhost:8080) and log in to airflow. You should be able to see 3 DAGs that are paused.
 ![image](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/99_files/Airflow%20DAGs.png)
-Please enable all 3. Wait for them to start, just refresh the page. **Do not trigger them manually**. DAGs will be triggered automatically once the previous one is finnished.
+Please enable all 3. Wait for them to start, just refresh the page. **Do not trigger them manually.**. DAGs will be triggered automatically once the previous one is finnished.
 
 * `data_ingestion_to_gcs`: first DAG, fetches data from kaggle and stores it in the Data Lake (GCS bucket). Triggers `process-food-waste-data` DAG.
 * `process-food-waste-data`: second DAG, processed all data using Spark, and stores it in the bucket. Triggers `data_to_dw_bq` DAG.
