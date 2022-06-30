@@ -65,18 +65,18 @@ x-airflow-common:
     # ADDING NEW ENV VARIABLES TO THE OFFICIAL DOCKER SETUP
     GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_credentials.json
     AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
+    KAGGLE_CONFIG_DIR: /.kaggle/
 
     # TODO: Please change GCP_PROJECT_ID, GCP_GCS_BUCKET, KAGGLE_USERNAME & KAGGLE_KEY as per your config
     GCP_PROJECT_ID: 'dtc-project-ritaafranco'
-    GCP_GCS_BUCKET: 'dtc-project-data_${GCP_PROJECT_ID}'
-    #KAGGLE_USERNAME: '<paste-here>'
-    #KAGGLE_KEY: '<paste-here>'
+    GCP_GCS_BUCKET: 'dtc-project-data_dtc-project-ritaafranco'
 
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - ~/.google/credentials/:/.google/credentials:ro
+    - ~/.kaggle/:/.kaggle:ro
 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
@@ -199,7 +199,7 @@ services:
           exit 1
         fi
         if [[ -z "${AIRFLOW_UID}" ]]; then
-          echo
+          echoe
           echo -e "\033[1;33mWARNING!!!: AIRFLOW_UID not set!\e[0m"
           echo "If you are on Linux, you SHOULD follow the instructions below to set "
           echo "AIRFLOW_UID environment variable, otherwise files will be owned by root."
