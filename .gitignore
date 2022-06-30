@@ -3,4 +3,4 @@
 **/02_airflow/logs/*
 **/.terraform/
 .terraform.lock.hcl
-terraform.tfstate
+terraform.tfstate*
