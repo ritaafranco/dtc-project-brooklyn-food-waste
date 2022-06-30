@@ -62,9 +62,10 @@ For this project a free GCP account is all you need.
 1. Create an account with your Google email ID 
 2. Setup your first [project](https://console.cloud.google.com/) if you haven't already
     * eg. "dtc-project-ritaafranco"
-3. Copy the project id to the [Docker Compose](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/02_airflow/docker-compose.yaml) file (lines 70).
+3. Copy the project id to the [Docker Compose](https://github.com/ritaafranco/dtc-project-brooklyn-food-waste/blob/main/02_airflow/docker-compose.yaml) file, changing both variables as shown bellow (lines 70 and 71).
 ```
 GCP_PROJECT_ID: '<your-gcp-project-id>'
+GCP_GCS_BUCKET: 'dtc-project-data_<your-gcp-project-id>'
 ```
 3. Setup [service account & authentication](https://cloud.google.com/docs/authentication/getting-started) for this project
     * Grant `Viewer` role to begin with.
