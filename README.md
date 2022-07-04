@@ -128,3 +128,4 @@ You can now create a new report and add the recently created Big Query tables as
 # Future Development
 * Add complementary data to make the analysis more interesting, eg: CO2 emissions produced by this food waste.
 * Adjust data schema to create an optimized data model for the dashboard.
+* Run Spark on GCP instead of inside Airflow Container. And then calling a triger for that spark container.
